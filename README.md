@@ -15,7 +15,7 @@ Dashboard gratuita per monitorare i principali segnali di stress del mercato pet
 3. Vai in **Settings → Pages**.
 4. Seleziona **GitHub Actions** come source.
 5. Il workflow `deploy.yml` pubblicherà automaticamente il sito.
-6. Il workflow `collect.yml` aggiornerà i dati ogni 6 ore.
+6. Il workflow `.github/workflows/collect.yml` aggiornerà i dati ogni 6 ore.
 
 L'URL sarà normalmente:
 

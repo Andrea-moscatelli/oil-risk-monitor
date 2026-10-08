@@ -126,9 +126,10 @@ async function load(){
  new Chart(document.getElementById("vlccChart"),{type:"line",data:{labels:vlccLabels,datasets:[{label:"VLCC index",data:vlccVals,tension:.2,borderWidth:2,pointRadius:2}]},options:{responsive:true,plugins:{legend:{display:false}}}});
  const sLabels=d.stocks.history.map(x=>x.date), sVals=d.stocks.history.map(x=>x.value/1000000);
  new Chart(document.getElementById("stocksChart"),{type:"line",data:{labels:sLabels,datasets:[{label:"mld bbl",data:sVals,borderWidth:2,pointRadius:2}]},options:{responsive:true,plugins:{legend:{display:false}}}});
- document.getElementById("incidentRows").innerHTML=d.attacks.events.map(e=>`<tr><td>${e.date}</td><td><span class="badge">${e.type}</span></td><td>${e.title}</td></tr>`).join("");
+ document.getElementById("incidentRows").innerHTML=d.attacks.events.map(e=>`<tr><td>${esc(e.date)}</td><td><span class="badge">${esc(e.type)}</span></td><td>${esc(e.title)}</td></tr>`).join("");
 }
 
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const pct=(x,d=1)=>x==null?"—":(x*100).toFixed(d)+"%";
 const sgn=(x,d=2)=>x==null?"—":(x>=0?"+":"")+x.toFixed(d)+"%";
 function sigBox(prefix,o){
