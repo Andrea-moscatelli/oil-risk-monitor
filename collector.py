@@ -70,7 +70,7 @@ def ukmto_events(text,today,days=7):
     out=[];seen=set()
     for i,m in enumerate(heads):
         nxt=heads[i+1].start() if i+1<len(heads) else len(text)
-        block=text[m.start():min(nxt,m.start()+700)]
+        block=text[m.start():min(nxt,m.start()+1200)]
         # la data della card è quella più vicina al titolo, sia che segua sia che preceda
         after=UKMTO_DATE.search(text,m.end(),min(nxt,m.end()+400))
         prev=list(UKMTO_DATE.finditer(text,max(0,m.start()-150),m.start()))
@@ -83,7 +83,7 @@ def ukmto_events(text,today,days=7):
         except ValueError: continue
         if cutoff<=dt<=today:
             seen.add(m.group(2))
-            out.append({"date":dt.isoformat(),"type":m.group(1).title(),"title":re.sub(r"\s+"," ",block)[:220]})
+            out.append({"date":dt.isoformat(),"type":m.group(1).title(),"title":re.sub(r"\s+"," ",block).strip()[:900]})
     return sorted(out,key=lambda x:x["date"],reverse=True),cutoff
 
 def parse_ukmto(url="https://www.ukmto.org/recent-incidents"):
