@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "timestamp": "2026-10-08T21:01:54.907022+00:00",
+  "score": 9,
+  "score_version": 1,
+  "signal": "BUY",
+  "target_ts": "2026-10-09T21:01:54.907022+00:00",
+  "brent_entry": 103.81,
+  "brent_entry_ts": "2026-10-08T20:51:46+00:00",
+  "status": "pending",
+  "reason": null,
+  "outcome": null
+ }
+]

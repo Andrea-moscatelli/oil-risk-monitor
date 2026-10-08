@@ -1,6 +1,108 @@
-{"updated_at": null, "horizon_h": 24, "thresholds": {"buy_above": 6, "sell_below": 4},
- "counts": {"total": 0, "evaluated": 0, "pending": 0, "skipped": 0},
- "baseline": {"n": 0, "up_rate": null, "down_rate": null, "avg_ret_pct": null},
- "signals": {"BUY": {"n": 0, "hits": 0, "hit_rate": null, "avg_signed_ret_pct": null, "baseline_rate": null, "p_value": null, "pending": 0},
-             "SELL": {"n": 0, "hits": 0, "hit_rate": null, "avg_signed_ret_pct": null, "baseline_rate": null, "p_value": null, "pending": 0}},
- "by_score": []}
+{
+  "updated_at": "2026-10-08T21:01:54.907022+00:00",
+  "horizon_h": 24,
+  "thresholds": {
+    "buy_above": 6,
+    "sell_below": 4
+  },
+  "counts": {
+    "total": 1,
+    "evaluated": 0,
+    "pending": 1,
+    "skipped": 0
+  },
+  "baseline": {
+    "n": 0,
+    "up_rate": null,
+    "down_rate": null,
+    "avg_ret_pct": null
+  },
+  "signals": {
+    "BUY": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "avg_signed_ret_pct": null,
+      "baseline_rate": null,
+      "p_value": null,
+      "pending": 1
+    },
+    "SELL": {
+      "n": 0,
+      "hits": 0,
+      "hit_rate": null,
+      "avg_signed_ret_pct": null,
+      "baseline_rate": null,
+      "p_value": null,
+      "pending": 0
+    }
+  },
+  "by_score": [
+    {
+      "score": 0,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 1,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 2,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 3,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 4,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 5,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 6,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 7,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 8,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 9,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    },
+    {
+      "score": 10,
+      "n": 0,
+      "up_rate": null,
+      "avg_ret_pct": null
+    }
+  ]
+}
