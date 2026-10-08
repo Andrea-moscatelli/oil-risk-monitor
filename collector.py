@@ -1,4 +1,5 @@
 import json, re, os
+from io import StringIO
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import pandas as pd
@@ -17,7 +18,7 @@ def get(url):
 
 def parse_vlcc():
     url="https://commodityscope.com/freight/indices/commodityscope-vlcc-freight-index"
-    tables=pd.read_html(get(url))
+    tables=pd.read_html(StringIO(get(url)))
     t=next(x for x in tables if any("index" in str(c).lower() for c in x.columns))
     t.columns=[str(c).strip() for c in t.columns]
     dc=next(c for c in t.columns if "date" in c.lower())
@@ -66,31 +67,25 @@ def parse_ukmto():
             "events":out[:30]}
 
 def parse_eia():
+    # Valori in MIGLIAIA di barili (Mbbl): es. 1,248,641 = 1,25 mld bbl. Le colonne sono in ordine cronologico.
     url="https://www.eia.gov/dnav/pet/pet_stoc_wstk_a_EP00_SAE_Mbbl_w.htm"
-    tables=pd.read_html(get(url))
-    # Locate table containing dates and U.S. total.
-    t=next(x for x in tables if x.astype(str).apply(lambda c:c.str.contains("U.S.",regex=False).any()).any())
-    # EIA HTML layout is awkward; extract directly from page with regex around U.S.
-    html=get(url)
-    dates=re.findall(r"\d\d/\d\d/\d\d",html)
-    # Safer fallback: parse visible numbers from the U.S. row using BeautifulSoup.
-    soup=BeautifulSoup(html,"html.parser")
-    txt=soup.get_text(" ",strip=True)
-    # Current page exposes the latest six weekly values in its data table.
-    vals=re.findall(r"1,\d{3},\d{3}",txt)
-    nums=[int(x.replace(",","")) for x in vals[-12:]]
+    txt=BeautifulSoup(get(url),"html.parser").get_text(" ",strip=True)
+    nums=[int(x.replace(",","")) for x in re.findall(r"\b1,\d{3},\d{3}\b",txt)]
     if len(nums)<2: raise RuntimeError("EIA values not parsed")
-    # Preserve the latest values, newest last.
-    hist=[{"date":"EIA latest","value":float(v)} for v in nums[-8:]]
-    latest=nums[-1]; prev=nums[-2]
-    return {"latest":latest,"change":latest-prev,"date":"2026-10-02","history":hist}
+    vals=nums[-6:]
+    ds=[f"20{y}-{m}-{d}" for m,d,y in re.findall(r"\b(\d\d)/(\d\d)/(\d\d)\b",txt)]
+    labels=ds[:6] if len(ds)>=6 and len(vals)==6 else ["n/d"]*len(vals)
+    hist=[{"date":l,"value":float(v)} for l,v in zip(labels,vals)]
+    latest=vals[-1]; prev=vals[-2]
+    print("EIA:",hist[-2:],"change (Mbbl):",latest-prev)
+    return {"latest":latest,"change":latest-prev,"date":labels[-1],"history":hist}
 
 def score(v,a,s):
     # Indicative stress score:
     # freight momentum 0-4, attacks 0-3, stocks draw 0-3.
     sf=4 if v["change48h"]>=20 else 3 if v["change48h"]>=10 else 2 if v["change48h"]>=5 else 1 if v["change48h"]>0 else 0
     sa=3 if a["count"]>=8 else 2 if a["count"]>=4 else 1 if a["count"]>=1 else 0
-    ss=3 if s["change"]<=-5000000 else 2 if s["change"]<0 else 0
+    ss=3 if s["change"]<=-5000 else 2 if s["change"]<0 else 0   # Mbbl: -5000 = -5 mln bbl
     n=sf+sa+ss
     label=("Tensione molto elevata" if n>=8 else "Tensione elevata" if n>=6 else "Segnale misto/attenzione" if n>=3 else "Pressione bassa")
     return {"value":n,"label":label,"signal":tracker.signal_for(n)}

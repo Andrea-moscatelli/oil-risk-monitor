@@ -112,7 +112,7 @@ async function load(){
  document.getElementById("attackDate").textContent="Finestra: "+d.attacks.window;
 
  document.getElementById("stocks").textContent=(d.stocks.latest/1000000).toFixed(1)+" mld bbl";
- document.getElementById("stocksDelta").textContent=(d.stocks.change>=0?"▲ ":"▼ ")+(d.stocks.change/1000000).toFixed(1)+" mln bbl";
+ document.getElementById("stocksDelta").textContent=(d.stocks.change>=0?"▲ ":"▼ ")+(d.stocks.change/1000).toFixed(1)+" mln bbl";
  document.getElementById("stocksDelta").className="delta "+(d.stocks.change>=0?"up":"down");
  document.getElementById("stocksDate").textContent="EIA: settimana "+d.stocks.date;
 
