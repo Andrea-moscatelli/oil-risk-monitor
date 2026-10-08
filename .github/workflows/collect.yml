@@ -21,3 +21,4 @@ jobs:
           git add data/
           git diff --cached --quiet || git commit -m "Update oil market data"
           git push
+
