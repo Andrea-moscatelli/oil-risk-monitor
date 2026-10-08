@@ -1,0 +1,23 @@
+name: Update oil data
+on:
+  schedule:
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: python collector.py
+      - name: Commit data
+        run: |
+          git config user.name "oil-risk-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Update oil market data"
+          git push

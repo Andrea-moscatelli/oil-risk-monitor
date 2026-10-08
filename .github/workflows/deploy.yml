@@ -1,0 +1,28 @@
+name: Deploy dashboard
+on:
+  push:
+    branches: [main]
+  # i commit fatti da collect.yml con GITHUB_TOKEN non fanno partire il trigger "push":
+  # senza questo il sito non verrebbe ripubblicato dopo ogni raccolta dati
+  workflow_run:
+    workflows: ["Update oil data"]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: "."}
+      - id: deployment
+        uses: actions/deploy-pages@v4

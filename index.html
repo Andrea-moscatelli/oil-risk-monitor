@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oil Risk Monitor</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f5f7f4;color:#172018}
+body{margin:0}.wrap{max-width:1200px;margin:auto;padding:24px}
+h1{margin:0 0 4px}.sub{color:#647064;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:white;border:1px solid #dfe5df;border-radius:16px;padding:18px;box-shadow:0 2px 8px #00000008}
+.label{font-size:13px;color:#6b756c;text-transform:uppercase;letter-spacing:.06em}
+.value{font-size:32px;font-weight:750;margin:8px 0}.delta{font-weight:650}.muted{font-size:12px;color:#7b847c}
+.up{color:#b24b32}.down{color:#26754d}.neutral{color:#68736b}
+.score{font-size:48px;font-weight:800}.bar{height:12px;background:#e8ece8;border-radius:8px;overflow:hidden}.fill{height:100%;width:0%;transition:width .5s}
+section{margin-top:18px}.wide{grid-column:1/-1}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:9px;border-bottom:1px solid #edf0ed;text-align:left}
+.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#eef2ee;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+.stat{border:1px solid #edf0ed;border-radius:12px;padding:12px}
+.stat .big{font-size:28px;font-weight:750}.stat .row{font-size:12px;color:#5d685f;margin-top:4px}
+.warn{background:#fff6e0;border:1px solid #f0dca0;color:#6b5410;border-radius:10px;padding:10px 12px;font-size:13px;margin:10px 0}
+.hit{background:#e0f3e8;color:#1d6b43}.miss{background:#fbe4de;color:#9b3a24}.pend{background:#eef2ee;color:#68736b}
+.sig-BUY{color:#26754d;font-weight:700}.sig-SELL{color:#b24b32;font-weight:700}.sig-NEUTRAL{color:#68736b}
+.scroll{overflow-x:auto}
+@media(max-width:850px){.stats{grid-template-columns:1fr}}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.wrap{padding:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🛢️ Oil Risk Monitor</h1>
+  <div class="sub">Supply-stress dashboard · aggiornamento automatico</div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="label">🚢 VLCC Freight</div>
+      <div id="vlcc" class="value">—</div>
+      <div id="vlccDelta" class="delta neutral">—</div>
+      <div id="vlccDate" class="muted"></div>
+    </div>
+    <div class="card">
+      <div class="label">⚠️ Tanker attacks · 7 giorni</div>
+      <div id="attacks" class="value">—</div>
+      <div id="attackDelta" class="delta neutral">—</div>
+      <div id="attackDate" class="muted"></div>
+    </div>
+    <div class="card">
+      <div class="label">🛢️ USA stocks</div>
+      <div id="stocks" class="value">—</div>
+      <div id="stocksDelta" class="delta neutral">—</div>
+      <div id="stocksDate" class="muted"></div>
+    </div>
+
+    <div class="card wide">
+      <div class="label">🎯 Supply Stress Score</div>
+      <div id="score" class="score">—/10</div>
+      <div class="bar"><div id="fill" class="fill"></div></div>
+      <p id="interpretation" class="muted"></p>
+      <div id="currentSignal" class="muted"></div>
+    </div>
+
+    <div class="card wide">
+      <div class="label">📊 Accuratezza storica dello score · verifica a 24h sul Brent</div>
+      <div id="accNote" class="muted" style="margin-top:6px"></div>
+      <div id="accWarn"></div>
+      <div class="stats">
+        <div class="stat"><div class="label">BUY · score &gt; <span id="thBuy">6</span></div><div id="buyBig" class="big">—</div><div id="buyRow" class="row"></div></div>
+        <div class="stat"><div class="label">SELL · score &lt; <span id="thSell">4</span></div><div id="sellBig" class="big">—</div><div id="sellRow" class="row"></div></div>
+        <div class="stat"><div class="label">Baseline (tutti gli snapshot)</div><div id="baseBig" class="big">—</div><div id="baseRow" class="row"></div></div>
+      </div>
+      <div class="label" style="margin-top:16px">Per valore di score</div>
+      <div class="scroll"><table><thead><tr><th>Score</th><th>N</th><th>Brent salito a 24h</th><th>Var. media 24h</th></tr></thead><tbody id="byScoreRows"></tbody></table></div>
+      <div class="label" style="margin-top:16px">Ultimi segnali</div>
+      <div class="scroll"><table><thead><tr><th>Data (UTC)</th><th>Score</th><th>Segnale</th><th>Brent al segnale</th><th>Brent a +24h</th><th>Var.</th><th>Esito</th></tr></thead><tbody id="trackRows"></tbody></table></div>
+    </div>
+
+    <div class="card wide">
+      <div class="label">VLCC Freight · storico</div>
+      <canvas id="vlccChart" height="90"></canvas>
+    </div>
+
+    <div class="card wide">
+      <div class="label">🛢️ Scorte USA · storico</div>
+      <canvas id="stocksChart" height="90"></canvas>
+    </div>
+
+    <div class="card wide">
+      <div class="label">⚠️ Incidenti UKMTO · ultimi 7 giorni</div>
+      <table><thead><tr><th>Data</th><th>Tipo</th><th>Evento</th></tr></thead>
+      <tbody id="incidentRows"></tbody></table>
+    </div>
+  </div>
+
+  <p class="muted" style="margin-top:20px">
+    Fonti: CommodityScope · UKMTO · U.S. EIA · IEA. Il punteggio è un modello indicativo.
+  </p>
+</div>
+<script>
+async function load(){
+ const r=await fetch("data/latest.json?"+Date.now()); const d=await r.json();
+ const fmt=n=>new Intl.NumberFormat("it-IT",{maximumFractionDigits:0}).format(n);
+ document.getElementById("vlcc").textContent=fmt(d.vlcc.latest);
+ document.getElementById("vlccDelta").textContent=(d.vlcc.change1d>=0?"▲ ":"▼ ")+d.vlcc.change1d.toFixed(2)+"%  ·  48h "+(d.vlcc.change48h>=0?"▲ ":"▼ ")+d.vlcc.change48h.toFixed(2)+"%";
+ document.getElementById("vlccDelta").className="delta "+(d.vlcc.change1d>=0?"up":"down");
+ document.getElementById("vlccDate").textContent="Dato: "+d.vlcc.date;
+
+ document.getElementById("attacks").textContent=d.attacks.count+" eventi";
+ document.getElementById("attackDelta").textContent=d.attacks.change7dText;
+ document.getElementById("attackDate").textContent="Finestra: "+d.attacks.window;
+
+ document.getElementById("stocks").textContent=(d.stocks.latest/1000000).toFixed(1)+" mld bbl";
+ document.getElementById("stocksDelta").textContent=(d.stocks.change>=0?"▲ ":"▼ ")+(d.stocks.change/1000000).toFixed(1)+" mln bbl";
+ document.getElementById("stocksDelta").className="delta "+(d.stocks.change>=0?"up":"down");
+ document.getElementById("stocksDate").textContent="EIA: settimana "+d.stocks.date;
+
+ document.getElementById("score").textContent=d.score.value+"/10";
+ document.getElementById("fill").style.width=(d.score.value*10)+"%";
+ document.getElementById("interpretation").textContent=d.score.label;
+ const sigTxt={BUY:"BUY",SELL:"SELL",NEUTRAL:"NEUTRO"}[d.score.signal]||"—";
+ document.getElementById("currentSignal").textContent="Segnale attuale: "+sigTxt+(d.brent?" · Brent "+d.brent.price.toFixed(2):"");
+
+ const vlccLabels=d.vlcc.history.map(x=>x.date), vlccVals=d.vlcc.history.map(x=>x.value);
+ new Chart(document.getElementById("vlccChart"),{type:"line",data:{labels:vlccLabels,datasets:[{label:"VLCC index",data:vlccVals,tension:.2,borderWidth:2,pointRadius:2}]},options:{responsive:true,plugins:{legend:{display:false}}}});
+ const sLabels=d.stocks.history.map(x=>x.date), sVals=d.stocks.history.map(x=>x.value/1000000);
+ new Chart(document.getElementById("stocksChart"),{type:"line",data:{labels:sLabels,datasets:[{label:"mld bbl",data:sVals,borderWidth:2,pointRadius:2}]},options:{responsive:true,plugins:{legend:{display:false}}}});
+ document.getElementById("incidentRows").innerHTML=d.attacks.events.map(e=>`<tr><td>${e.date}</td><td><span class="badge">${e.type}</span></td><td>${e.title}</td></tr>`).join("");
+}
+
+const pct=(x,d=1)=>x==null?"—":(x*100).toFixed(d)+"%";
+const sgn=(x,d=2)=>x==null?"—":(x>=0?"+":"")+x.toFixed(d)+"%";
+function sigBox(prefix,o){
+  document.getElementById(prefix+"Big").textContent=o.n?pct(o.hit_rate,0):"—";
+  document.getElementById(prefix+"Row").innerHTML=
+    `${o.hits}/${o.n} azzeccati · in attesa: ${o.pending}<br>`+
+    `Rendimento medio seguendo il segnale: ${sgn(o.avg_signed_ret_pct)}<br>`+
+    `Base: ${pct(o.baseline_rate,0)} · p-value: ${o.p_value==null?"—":o.p_value.toFixed(3)}`;
+}
+async function loadAccuracy(){
+  const [a,t]=await Promise.all([
+    fetch("data/accuracy.json?"+Date.now()).then(r=>r.json()),
+    fetch("data/track_record.json?"+Date.now()).then(r=>r.json())]);
+  document.getElementById("thBuy").textContent=a.thresholds.buy_above;
+  document.getElementById("thSell").textContent=a.thresholds.sell_below;
+  const c=a.counts;
+  document.getElementById("accNote").textContent=
+    `Snapshot totali: ${c.total} · valutati: ${c.evaluated} · in attesa: ${c.pending} · esclusi (mercato chiuso / prezzo mancante): ${c.skipped}`;
+  const nSig=a.signals.BUY.n+a.signals.SELL.n;
+  document.getElementById("accWarn").innerHTML= nSig<30
+    ? `<div class="warn">Campione ancora piccolo (${nSig} segnali valutati): non è sufficiente per trarre conclusioni. `+
+      `Gli snapshot sono ogni 6 ore e le finestre a 24h si sovrappongono, quindi i campioni non sono indipendenti e il p-value è ottimistico.</div>`
+    : `<div class="warn">Gli snapshot sono ogni 6 ore e le finestre a 24h si sovrappongono: i campioni non sono indipendenti, il p-value è ottimistico.</div>`;
+  sigBox("buy",a.signals.BUY); sigBox("sell",a.signals.SELL);
+  document.getElementById("baseBig").textContent=a.baseline.n?pct(a.baseline.up_rate,0)+" ▲":"—";
+  document.getElementById("baseRow").innerHTML=`N=${a.baseline.n} · Brent salito a 24h<br>Var. media 24h: ${sgn(a.baseline.avg_ret_pct)}`;
+  document.getElementById("byScoreRows").innerHTML=a.by_score.filter(x=>x.n>0).map(x=>
+    `<tr><td>${x.score}</td><td>${x.n}</td><td>${pct(x.up_rate,0)}</td><td>${sgn(x.avg_ret_pct)}</td></tr>`).join("")
+    ||`<tr><td colspan="4" class="muted">Nessun dato valutato ancora</td></tr>`;
+  const row=r=>{
+    const out=r.status==="evaluated"
+      ? (r.outcome==="hit"?'<span class="badge hit">✓ azzeccato</span>':r.outcome==="miss"?'<span class="badge miss">✗ sbagliato</span>':'<span class="badge pend">neutro</span>')
+      : r.status==="pending"?'<span class="badge pend">in attesa</span>'
+      : `<span class="badge pend" title="${r.reason||""}">escluso</span>`;
+    const f=v=>v==null?"—":v.toFixed(2);
+    return `<tr><td>${r.timestamp.slice(0,16).replace("T"," ")}</td><td>${r.score}</td><td class="sig-${r.signal}">${r.signal}</td>`+
+      `<td>${f(r.brent_entry)}</td><td>${f(r.brent_exit)}</td><td>${r.ret24h_pct==null?"—":sgn(r.ret24h_pct)}</td><td>${out}</td></tr>`;
+  };
+  document.getElementById("trackRows").innerHTML=t.slice(-60).reverse().map(row).join("")
+    ||`<tr><td colspan="7" class="muted">Nessun segnale registrato ancora</td></tr>`;
+}
+loadAccuracy().catch(e=>{document.getElementById("accNote").textContent="Storico non disponibile: "+e;});
+
+load().catch(e=>document.body.innerHTML+="<p style='padding:20px'>Errore caricamento dati: "+e+"</p>");
+</script>
+</body>
+</html>

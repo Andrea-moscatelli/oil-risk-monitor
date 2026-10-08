@@ -1,0 +1,26 @@
+{
+  "updated_at": null,
+  "vlcc": {
+    "latest": 0,
+    "change1d": 0,
+    "change48h": 0,
+    "date": "in attesa",
+    "history": []
+  },
+  "attacks": {
+    "count": 0,
+    "window": "in attesa",
+    "change7dText": "in attesa",
+    "events": []
+  },
+  "stocks": {
+    "latest": 0,
+    "change": 0,
+    "date": "in attesa",
+    "history": []
+  },
+  "score": {
+    "value": 0,
+    "label": "In attesa del primo aggiornamento automatico"
+  }
+}
