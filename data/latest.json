@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:01:54.907022+00:00",
+  "updated_at": "2026-10-09T06:02:40.451562+00:00",
   "vlcc": {
     "latest": 3030.84,
     "date": "2026-10-07",
@@ -117,9 +117,9 @@
     ]
   },
   "attacks": {
-    "count": 11,
-    "window": "2026-10-01 → 2026-10-08",
-    "change7dText": "11 attacchi verificati UKMTO",
+    "count": 10,
+    "window": "2026-10-02 → 2026-10-09",
+    "change7dText": "10 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-07",
@@ -180,11 +180,6 @@
         "date": "2026-10-02",
         "type": "Attack",
         "title": "Attack UKMTO #148 2 October 2026 UKMTO WARNING 148-26 - ATTACK Report Date:02 Oct 2026 Report Time:1122 UTC Issue Date:02 Oct 2026 Source Master UKMTO has received a report of an incident within the Strait of Hormuz. The Master of a tanker has reported being struck by an unknown projectile, whilst conducting an outbound transit, resulting in a small fire and blackout onboard. The fire has since been extinguished and the vessel is underway. There are no reported casualties or environmental impact. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-01",
-        "type": "Attack",
-        "title": "Attack UKMTO #147 1 October 2026 UKMTO has received a third-party report of a tanker being stuck by an unknown projectile while transiting the Strait of Hormuz, resulting in a fire. Crew have been reported safe, damage assessment and environmental impact is unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -225,7 +220,7 @@
     "signal": "BUY"
   },
   "brent": {
-    "price": 103.81,
-    "ts": 1791492706
+    "price": 103.02,
+    "ts": 1791525170
   }
 }
