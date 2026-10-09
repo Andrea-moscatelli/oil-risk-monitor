@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-09T06:02:40.451562+00:00",
+  "updated_at": "2026-10-09T13:10:16.375290+00:00",
   "vlcc": {
-    "latest": 3030.84,
-    "date": "2026-10-07",
-    "change1d": 7.9766578551732525,
-    "change48h": 12.872880030389044,
+    "latest": 3086.0,
+    "date": "2026-10-08",
+    "change1d": 1.8199575035303672,
+    "change48h": 9.941787141869796,
     "history": [
       {
         "date": "2026-09-01",
@@ -113,14 +113,23 @@
       {
         "date": "2026-10-07",
         "value": 3030.84
+      },
+      {
+        "date": "2026-10-08",
+        "value": 3086.0
       }
     ]
   },
   "attacks": {
-    "count": 10,
+    "count": 11,
     "window": "2026-10-02 → 2026-10-09",
-    "change7dText": "10 attacchi verificati UKMTO",
+    "change7dText": "11 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-09",
+        "type": "Attack",
+        "title": "Attack UKMTO #160 9 October 2026 UKMTO has received a report of an incident 13NM west of Al Jazeera, UAE. UKMTO has received reports from multiple sources that the vessel has been struck by an unknown projectile causing a fire which has since been extinguished. Status of the crew, damage assessment and environmental impact are unknown at present. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
+      },
       {
         "date": "2026-10-07",
         "type": "Attack",
@@ -215,12 +224,12 @@
     ]
   },
   "score": {
-    "value": 9,
+    "value": 8,
     "label": "Tensione molto elevata",
     "signal": "BUY"
   },
   "brent": {
-    "price": 103.02,
-    "ts": 1791525170
+    "price": 103.18,
+    "ts": 1791550828
   }
 }
