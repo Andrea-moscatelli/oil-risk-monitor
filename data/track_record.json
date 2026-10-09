@@ -34,5 +34,17 @@
   "status": "pending",
   "reason": null,
   "outcome": null
+ },
+ {
+  "timestamp": "2026-10-09T22:35:10.942075+00:00",
+  "score": 8,
+  "score_version": 1,
+  "signal": "BUY",
+  "target_ts": "2026-10-10T22:35:10.942075+00:00",
+  "brent_entry": 104.43,
+  "brent_entry_ts": "2026-10-09T20:59:58+00:00",
+  "status": "pending",
+  "reason": null,
+  "outcome": null
  }
 ]
