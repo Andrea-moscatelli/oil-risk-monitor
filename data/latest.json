@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T21:37:46.735176+00:00",
+  "updated_at": "2026-10-11T05:39:53.045217+00:00",
   "vlcc": {
     "latest": 3119.5,
     "date": "2026-10-09",
@@ -126,9 +126,14 @@
   },
   "attacks": {
     "count": 9,
-    "window": "2026-10-03 → 2026-10-10",
+    "window": "2026-10-04 → 2026-10-11",
     "change7dText": "9 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-10",
+        "type": "Attack",
+        "title": "Attack UKMTO #162 10 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. The Master of an outbound tanker reports being struck on the port side by an unknown projectile, causing a fire on board. Crew are reported safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO whilst authorities investigate."
+      },
       {
         "date": "2026-10-09",
         "type": "Attack",
@@ -178,11 +183,6 @@
         "date": "2026-10-04",
         "type": "Attack",
         "title": "Attack UKMTO #150 4 October 2026 UKMTO WARNING 150-26 - ATTACK Report Date: TBC Report Time: TBC Issue Date: 04 Oct 2026 Source Master UKMTO has received a report of an incident within the Strait of Hormuz. The Master of a tanker has reported being struck by unknown projectile, causing damage to the engine room. The crew have been reported as safe and there is no environmental impact reported at this time. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO. s"
-      },
-      {
-        "date": "2026-10-03",
-        "type": "Attack",
-        "title": "Attack UKMTO #155 3 October 2026 UKMTO 155-26 - ATTACK Incident Date: 03 OCT 2026 Incident Time: TBC UKMTO has received a time-late report of an incident within the Strait of Hormuz. A verified source has reported that a Crude Oil tanker has been struck above the waterline by an unknown projectile. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
       }
     ]
   },
