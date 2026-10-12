@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-12T05:49:58.482728+00:00",
+  "updated_at": "2026-10-12T15:14:46.175844+00:00",
   "horizon_h": 24,
   "thresholds": {
     "buy_above": 6,
     "sell_below": 4
   },
   "counts": {
-    "total": 11,
+    "total": 12,
     "evaluated": 0,
-    "pending": 1,
+    "pending": 2,
     "skipped": 10
   },
   "baseline": {
@@ -25,7 +25,7 @@
       "avg_signed_ret_pct": null,
       "baseline_rate": null,
       "p_value": null,
-      "pending": 1
+      "pending": 2
     },
     "SELL": {
       "n": 0,
