@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T14:05:46.241283+00:00",
+  "updated_at": "2026-10-13T22:40:24.194847+00:00",
   "vlcc": {
     "latest": 3058.09,
     "date": "2026-10-12",
@@ -129,10 +129,20 @@
     ]
   },
   "attacks": {
-    "count": 10,
+    "count": 12,
     "window": "2026-10-06 → 2026-10-13",
-    "change7dText": "10 attacchi verificati UKMTO",
+    "change7dText": "12 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-13",
+        "type": "Attack",
+        "title": "Attack UKMTO #171 13 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. A verified source has reported that a tanker was struck by an unknown projectile. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
+      },
+      {
+        "date": "2026-10-13",
+        "type": "Attack",
+        "title": "Attack UKMTO #170 13 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. A verified source has reported that a container ship was struck by an unknown projectile. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
+      },
       {
         "date": "2026-10-12",
         "type": "Attack",
@@ -222,7 +232,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 105.7,
-    "ts": 1791899756
+    "price": 106.2,
+    "ts": 1791930531
   }
 }
