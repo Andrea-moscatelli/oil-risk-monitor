@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T22:40:24.194847+00:00",
+  "updated_at": "2026-10-14T04:47:29.967732+00:00",
   "vlcc": {
     "latest": 3058.09,
     "date": "2026-10-12",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 12,
-    "window": "2026-10-06 → 2026-10-13",
-    "change7dText": "12 attacchi verificati UKMTO",
+    "count": 11,
+    "window": "2026-10-07 → 2026-10-14",
+    "change7dText": "11 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-13",
@@ -187,11 +187,6 @@
         "date": "2026-10-07",
         "type": "Attack",
         "title": "Attack UKMTO #158 7 October 2026 UKMTO WARNING 158-26 - ATTACK Incident Date: 07 OCT 2026 Incident Time: 1900 UKMTO has received a report of an incident 51NM north of Madinat ash Shamal, Qatar. A tanker has reported being struck by multiple projectiles. Casualties have been reported. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-06",
-        "type": "Attack",
-        "title": "Attack UKMTO #159 6 October 2026 UKMTO has received a time-late report from a verified source, that a crude oil tanker was struck by an unknown projectile on the 06 OCT2026, while transiting the Strait of Hormuz. There have been no reported casualties. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -232,7 +227,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 106.2,
-    "ts": 1791930531
+    "price": 106.18,
+    "ts": 1791952661
   }
 }
