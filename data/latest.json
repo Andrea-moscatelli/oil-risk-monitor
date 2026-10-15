@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T21:37:51.108614+00:00",
+  "updated_at": "2026-10-15T04:30:47.788558+00:00",
   "vlcc": {
     "latest": 3019.31,
     "date": "2026-10-13",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 13,
-    "window": "2026-10-07 → 2026-10-14",
-    "change7dText": "13 attacchi verificati UKMTO",
+    "count": 12,
+    "window": "2026-10-08 → 2026-10-15",
+    "change7dText": "12 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-14",
@@ -192,11 +192,6 @@
         "date": "2026-10-09",
         "type": "Attack",
         "title": "Attack UKMTO #160 9 October 2026 UKMTO has received a report of an incident 13NM west of Al Jazeera, UAE. UKMTO has received reports from multiple sources that the vessel has been struck by an unknown projectile causing a fire which has since been extinguished. Status of the crew, damage assessment and environmental impact are unknown at present. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-07",
-        "type": "Attack",
-        "title": "Attack UKMTO #158 7 October 2026 UKMTO WARNING 158-26 - ATTACK Incident Date: 07 OCT 2026 Incident Time: 1900 UKMTO has received a report of an incident 51NM north of Madinat ash Shamal, Qatar. A tanker has reported being struck by multiple projectiles. Casualties have been reported. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
       }
     ]
   },
@@ -237,7 +232,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 106.06,
-    "ts": 1792011595
+    "price": 104.4,
+    "ts": 1792038031
   }
 }
