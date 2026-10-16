@@ -7,8 +7,8 @@ Regola di valutazione:
                                         (serve per calcolare la baseline)
 
 Ogni snapshot (anche NEUTRAL) viene salvato con prezzo di ingresso e, dopo 24h, prezzo di uscita.
-Gli snapshot fatti a mercato chiuso (ingresso o uscita) vengono marcati "skipped" ed esclusi
-dalle statistiche, per non misurare il gap del weekend al posto di un vero movimento a 24h.
+Se il segnale cade nelle ore di chiusura del mercato (weekend CME), il record viene saltato.
+Se il target +24h cade nel weekend, viene spostato al primo momento di apertura successivo.
 """
 import math
 from datetime import datetime, timedelta, timezone
@@ -18,8 +18,6 @@ import requests
 BUY_ABOVE = 6          # score > 6  -> BUY
 SELL_BELOW = 4         # score < 4  -> SELL
 HORIZON_H = 24         # finestra di verifica
-MAX_ENTRY_AGE_H = 3    # prezzo di ingresso più vecchio di così = mercato chiuso
-MAX_EXIT_GAP_H = 2     # prima barra oraria utile dopo +24h entro questo scarto, altrimenti mercato chiuso
 SCORE_VERSION = 1      # incrementalo se cambi la formula dello score: i record restano separabili
 
 YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/BZ=F"
@@ -32,6 +30,33 @@ def signal_for(score):
     if score < SELL_BELOW:
         return "SELL"
     return "NEUTRAL"
+
+
+def market_open(ts):
+    """True se il CME Globex (Brent futures BZ=F) è aperto al timestamp ts (UTC).
+
+    Orari CME: apertura domenica 22:00 UTC, chiusura venerdì 22:00 UTC.
+    Pausa manutenzione: mercoledì 22:00-23:00 UTC.
+    """
+    dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+    if dt.weekday() == 5:  # sabato
+        return False
+    if dt.weekday() == 6 and dt.hour < 22:  # domenica prima delle 22:00
+        return False
+    if dt.weekday() == 4 and dt.hour >= 22:  # venerdì dalle 22:00
+        return False
+    if dt.weekday() == 2 and dt.hour == 22:  # mercoledì 22:00-23:00
+        return False
+    return True
+
+
+def next_market_open(ts):
+    """Primo momento di apertura del mercato dopo il timestamp ts (UTC)."""
+    dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+    dt = dt.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1)
+    while not market_open(dt.timestamp()):
+        dt += timedelta(hours=1)
+    return dt
 
 
 def _iso(ts):
@@ -58,7 +83,7 @@ def new_record(score_value, brent, now):
         "score": score_value,
         "score_version": SCORE_VERSION,
         "signal": signal_for(score_value),
-        "target_ts": (now + timedelta(hours=HORIZON_H)).isoformat(),
+        "target_ts": None,
         "brent_entry": None,
         "brent_entry_ts": None,
         "status": "pending",
@@ -70,13 +95,18 @@ def new_record(score_value, brent, now):
         return rec
     rec["brent_entry"] = brent["price"]
     rec["brent_entry_ts"] = _iso(brent["ts"])
-    if now.timestamp() - brent["ts"] > MAX_ENTRY_AGE_H * 3600:
+    if not market_open(now.timestamp()):
         rec.update(status="skipped", reason="mercato chiuso al momento del segnale")
+        return rec
+    target = now + timedelta(hours=HORIZON_H)
+    if not market_open(target.timestamp()):
+        target = next_market_open(target.timestamp())
+    rec["target_ts"] = target.isoformat()
     return rec
 
 
 def evaluate_pending(records, bars, now):
-    """Chiude i record 'pending' il cui target a +24h è ormai passato."""
+    """Chiude i record 'pending' il cui target (eventualmente spostato nel weekend) è passato."""
     for r in records:
         if r["status"] != "pending":
             continue
@@ -86,14 +116,11 @@ def evaluate_pending(records, bars, now):
         t = target.timestamp()
         nxt = next(((ts, p) for ts, p in bars if ts >= t), None)
         if nxt is None:
-            # nessuna barra dopo il target (es. weekend): riprova al prossimo giro, poi rinuncia
+            # nessuna barra dopo il target: riprova al prossimo giro, poi rinuncia
             if now - target > timedelta(days=7):
                 r.update(status="skipped", reason="prezzo di uscita non disponibile")
             continue
         ts, price = nxt
-        if ts - t > MAX_EXIT_GAP_H * 3600:
-            r.update(status="skipped", reason="mercato chiuso a +24h")
-            continue
         ret = (price / r["brent_entry"] - 1) * 100
         r.update(status="evaluated", brent_exit=price, brent_exit_ts=_iso(ts), ret24h_pct=round(ret, 3))
         if r["signal"] == "BUY":
