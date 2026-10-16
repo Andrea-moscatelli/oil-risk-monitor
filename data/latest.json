@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T21:19:34.102514+00:00",
+  "updated_at": "2026-10-16T04:25:03.701182+00:00",
   "vlcc": {
     "latest": 2936.62,
     "date": "2026-10-14",
@@ -130,7 +130,7 @@
   },
   "attacks": {
     "count": 12,
-    "window": "2026-10-08 → 2026-10-15",
+    "window": "2026-10-09 → 2026-10-16",
     "change7dText": "12 attacchi verificati UKMTO",
     "events": [
       {
@@ -232,7 +232,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 105.73,
-    "ts": 1792097993
+    "price": 105.36,
+    "ts": 1792123932
   }
 }
