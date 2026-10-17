@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T23:35:39.965277+00:00",
+  "updated_at": "2026-10-17T04:25:21.817973+00:00",
   "vlcc": {
     "latest": 2869.03,
     "date": "2026-10-15",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 12,
-    "window": "2026-10-09 → 2026-10-16",
-    "change7dText": "12 attacchi verificati UKMTO",
+    "count": 11,
+    "window": "2026-10-10 → 2026-10-17",
+    "change7dText": "11 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-14",
@@ -187,11 +187,6 @@
         "date": "2026-10-10",
         "type": "Attack",
         "title": "Attack UKMTO #162 10 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. The Master of an outbound tanker reports being struck on the port side by an unknown projectile, causing a fire on board. Crew are reported safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-09",
-        "type": "Attack",
-        "title": "Attack UKMTO #160 9 October 2026 UKMTO has received a report of an incident 13NM west of Al Jazeera, UAE. UKMTO has received reports from multiple sources that the vessel has been struck by an unknown projectile causing a fire which has since been extinguished. Status of the crew, damage assessment and environmental impact are unknown at present. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
       }
     ]
   },
@@ -232,7 +227,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 109.69,
+    "price": 109.86,
     "ts": 1792184371
   }
 }
