@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-10-17T09:21:13.837581+00:00",
+  "updated_at": "2026-10-17T13:43:18.597628+00:00",
   "vlcc": {
-    "latest": 2869.03,
-    "date": "2026-10-15",
-    "change1d": -2.301625678501118,
-    "change48h": -4.9772961371968965,
+    "latest": 2879.71,
+    "date": "2026-10-16",
+    "change1d": 0.3722512486798557,
+    "change48h": -1.9379422601494167,
     "history": [
-      {
-        "date": "2026-09-04",
-        "value": 1156.46
-      },
       {
         "date": "2026-09-07",
         "value": 1167.58
@@ -125,14 +121,23 @@
       {
         "date": "2026-10-15",
         "value": 2869.03
+      },
+      {
+        "date": "2026-10-16",
+        "value": 2879.71
       }
     ]
   },
   "attacks": {
-    "count": 13,
+    "count": 14,
     "window": "2026-10-10 → 2026-10-17",
-    "change7dText": "13 attacchi verificati UKMTO",
+    "change7dText": "14 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-17",
+        "type": "Attack",
+        "title": "Attack UKMTO #176 17 October 2026 UKMTO has received a report of an incident 140NM southwest of Al Mukalla, Yemen. A Master of an LNG Tanker has reported being approached by a small skiff with seven persons onboard. The skiff fired two shots at the tanker whose armed Security Team fired two warning shots at the small skiff which forced them to alter course. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-16",
         "type": "Attack",
