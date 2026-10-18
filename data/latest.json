@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T01:02:08.846301+00:00",
+  "updated_at": "2026-10-18T05:53:47.451838+00:00",
   "vlcc": {
     "latest": 2879.71,
     "date": "2026-10-16",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 13,
+    "count": 14,
     "window": "2026-10-11 → 2026-10-18",
-    "change7dText": "13 attacchi verificati UKMTO",
+    "change7dText": "14 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-18",
+        "type": "Attack",
+        "title": "Attack UKMTO #177 18 October 2026 UKMTO WARNING 177-26 - ATTACK Incident Date: 18 OCT 2026 Incident Time: TBC UKMTO has received a report of an incident northeast of Khor Fakkan, UAE. A tug travelling southbound has reported being struck by 2 unknown projectiles. The tug has sustained damage but is continuing on its route. One minor casualty has been reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-17",
         "type": "Attack",
