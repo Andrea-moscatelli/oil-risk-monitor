@@ -496,5 +496,17 @@
   "status": "skipped",
   "reason": "mercato chiuso al momento del segnale",
   "outcome": null
+ },
+ {
+  "timestamp": "2026-10-18T18:05:59.506481+00:00",
+  "score": 6,
+  "score_version": 1,
+  "signal": "NEUTRAL",
+  "target_ts": null,
+  "brent_entry": 109.86,
+  "brent_entry_ts": "2026-10-16T20:59:31+00:00",
+  "status": "skipped",
+  "reason": "mercato chiuso al momento del segnale",
+  "outcome": null
  }
 ]
