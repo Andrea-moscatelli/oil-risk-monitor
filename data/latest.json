@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T23:12:03.429800+00:00",
+  "updated_at": "2026-10-19T01:18:08.649164+00:00",
   "vlcc": {
     "latest": 2879.71,
     "date": "2026-10-16",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 14,
-    "window": "2026-10-11 → 2026-10-18",
-    "change7dText": "14 attacchi verificati UKMTO",
+    "count": 12,
+    "window": "2026-10-12 → 2026-10-19",
+    "change7dText": "12 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-18",
@@ -192,16 +192,6 @@
         "date": "2026-10-12",
         "type": "Attack",
         "title": "Attack UKMTO #166 12 October 2026 UKMTO WARNING 166-26 - ATTACK Incident Date:11 Oct 2026 Incident Time:TBC Source Verified UKMTO has received a time late report of an incident in the Strait of Hormuz. An outbound tanker has been struck by an unknown projectile. The crew have been confirmed as safe, and the environmental impact is unknown at this time. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-11",
-        "type": "Attack",
-        "title": "Attack UKMTO #165 11 October 2026 UKMTO Suspicious Activity 165-26 UKMTO has received a report of an incident involving a tanker in the vicinity of Sohar anchorage, Oman. The status of crew, damage assessment, and environmental impact are unknown at time of report. Update 001: UKMTO has reclassified this incident as an attack following confirmation that the tanker was struck by an Uncrewed Aerial Vehicle (UAV). Local authorities are assisting in the evacuation of the crew, damage assessment and environmental impact is unknown at time of update. Vessels are advised to transit with caution and report any suspicious activity to UKMTO whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-11",
-        "type": "Attack",
-        "title": "Attack UKMTO #164 11 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. The CSO reported a tanker transiting outbound had been struck on the port side by an unidentified projectile, resulting in damage to the vessel. All crew members were reported safe, and no environmental impact was reported at the time of the attack. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO. Advisory UKMTO #163 10 October 2026 UKMTO have received a report of an incident involving a tanker and military forces in the Gulf of Oman. Vessels are advised to consider the latest maritime security information and maintain awareness of the evolving operational environment. Authorities are aware and relevant investigations remain ongoing."
       }
     ]
   },
@@ -242,7 +232,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 108.78,
-    "ts": 1792364477
+    "price": 108.21,
+    "ts": 1792372088
   }
 }
