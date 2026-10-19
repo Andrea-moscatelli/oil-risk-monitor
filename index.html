@@ -72,7 +72,7 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:9px;borde
         <div class="stat"><div class="label">Baseline (tutti gli snapshot)</div><div id="baseBig" class="big">—</div><div id="baseRow" class="row"></div></div>
       </div>
       <div class="label" style="margin-top:16px">Per valore di score</div>
-      <div class="scroll"><table><thead><tr><th>Score</th><th>N</th><th>Brent salito a 24h</th><th>Var. media 24h</th></tr></thead><tbody id="byScoreRows"></tbody></table></div>
+      <div class="scroll" style="max-height:180px;overflow-y:auto"><table><thead><tr><th>Score</th><th>N</th><th>Brent salito a 24h</th><th>Var. media 24h</th></tr></thead><tbody id="byScoreRows"></tbody></table></div>
       <div class="label" style="margin-top:16px">Ultimi segnali</div>
       <div class="scroll"><table><thead><tr><th>Data (UTC)</th><th>Score</th><th>Segnale</th><th>Brent al segnale</th><th>Brent a +24h</th><th>Var.</th><th>Esito</th></tr></thead><tbody id="trackRows"></tbody></table></div>
     </div>
@@ -151,8 +151,8 @@ async function loadAccuracy(){
   const nSig=a.signals.BUY.n+a.signals.SELL.n;
   document.getElementById("accWarn").innerHTML= nSig<30
     ? `<div class="warn">Campione ancora piccolo (${nSig} segnali valutati): non è sufficiente per trarre conclusioni. `+
-      `Gli snapshot sono ogni 6 ore e le finestre a 24h si sovrappongono, quindi i campioni non sono indipendenti e il p-value è ottimistico.</div>`
-    : `<div class="warn">Gli snapshot sono ogni 6 ore e le finestre a 24h si sovrappongono: i campioni non sono indipendenti, il p-value è ottimistico.</div>`;
+      `Gli snapshot sono ogni ora e le finestre a 24h si sovrappongono, quindi i campioni non sono indipendenti e il p-value è ottimistico.</div>`
+    : `<div class="warn">Gli snapshot sono ogni ora e le finestre a 24h si sovrappongono: i campioni non sono indipendenti, il p-value è ottimistico.</div>`;
   sigBox("buy",a.signals.BUY); sigBox("sell",a.signals.SELL);
   document.getElementById("baseBig").textContent=a.baseline.n?pct(a.baseline.up_rate,0)+" ▲":"—";
   document.getElementById("baseRow").innerHTML=`N=${a.baseline.n} · Brent salito a 24h<br>Var. media 24h: ${sgn(a.baseline.avg_ret_pct)}`;

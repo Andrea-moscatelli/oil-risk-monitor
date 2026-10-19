@@ -58,6 +58,19 @@ def next_market_open(ts):
         dt += timedelta(hours=1)
     return dt
 
+def verification_time(target):
+    """Quando verificare un segnale il cui target cade a `target` (datetime UTC).
+    - mercato aperto -> il target stesso
+    - chiusura del weekend (ven 22:00 → dom 22:00) -> lunedì 00:00 UTC
+    - pausa tecnica (mer 22-23) -> prima riapertura
+    """
+    if market_open(target.timestamp()):
+        return target
+    if target.weekday() in (4, 5, 6):
+        days = (7 - target.weekday()) % 7        # ven→3, sab→2, dom→1
+        return (target + timedelta(days=days)).replace(hour=0, minute=0, second=0, microsecond=0)
+    return next_market_open(target.timestamp())
+
 
 def _iso(ts):
     return datetime.fromtimestamp(ts, tz=timezone.utc).isoformat()
@@ -78,6 +91,8 @@ def fetch_brent():
 
 
 def new_record(score_value, brent, now):
+    if not market_open(now.timestamp()):
+        return None          # nessuna previsione a mercato chiuso
     rec = {
         "timestamp": now.isoformat(),
         "score": score_value,
@@ -96,7 +111,10 @@ def new_record(score_value, brent, now):
     rec["brent_entry"] = brent["price"]
     rec["brent_entry_ts"] = _iso(brent["ts"])
     if not market_open(now.timestamp()):
-        rec.update(status="skipped", reason="mercato chiuso al momento del segnale")
+        rec["brent_entry"] = brent["price"]
+        rec["brent_entry_ts"] = _iso(brent["ts"])
+        target = verification_time(now + timedelta(hours=HORIZON_H))
+        rec["target_ts"] = target.isoformat()
         return rec
     target = now + timedelta(hours=HORIZON_H)
     if not market_open(target.timestamp()):

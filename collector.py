@@ -149,12 +149,19 @@ def main(now=None):
                  "score":sc["value"],"brent":brent["price"] if brent else None})
     p.write_text(json.dumps(hist[-1000:],ensure_ascii=False,indent=2),encoding="utf-8")
 
-    # --- track record: verifica i segnali vecchi di 24h, registra quello nuovo, ricalcola le statistiche ---
+    # --- track record: verifica i segnali pendenti, registra quello nuovo (solo a mercato aperto), ricalcola le statistiche ---
     tp=DATA/"track_record.json"
     records=load_json(tp,[])
     if brent:
+        # anche a mercato chiuso: così i segnali del venerdì si chiudono lunedì
         tracker.evaluate_pending(records,brent["bars"],now)
-    records.append(tracker.new_record(sc["value"],brent,now))
+
+    last=datetime.fromisoformat(records[-1]["timestamp"]) if records else None
+    if not last or now-last>=timedelta(minutes=45):   # evita doppioni se Actions parte due volte
+        rec=tracker.new_record(sc["value"],brent,now) # None se il mercato è chiuso
+        if rec:
+            records.append(rec)
+
     tp.write_text(json.dumps(records,ensure_ascii=False,indent=1),encoding="utf-8")
     (DATA/"accuracy.json").write_text(json.dumps(tracker.summarize(records,now),ensure_ascii=False,indent=2),encoding="utf-8")
 
