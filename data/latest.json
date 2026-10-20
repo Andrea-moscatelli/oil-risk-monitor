@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T21:03:24.583941+00:00",
+  "updated_at": "2026-10-20T00:19:44.431436+00:00",
   "vlcc": {
     "latest": 2879.71,
     "date": "2026-10-16",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 12,
-    "window": "2026-10-12 → 2026-10-19",
-    "change7dText": "12 attacchi verificati UKMTO",
+    "count": 8,
+    "window": "2026-10-13 → 2026-10-20",
+    "change7dText": "8 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-18",
@@ -172,26 +172,6 @@
         "date": "2026-10-13",
         "type": "Attack",
         "title": "Attack UKMTO #170 13 October 2026 UKMTO has received a report of an incident within the Strait of Hormuz. A verified source has reported that a container ship was struck by an unknown projectile. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-12",
-        "type": "Attack",
-        "title": "Attack UKMTO #169 12 October 2026 UKMTO has received a time-late report of an incident within the Strait of Hormuz. A verified source has reported that a crude oil tanker has been struck by an unknown projectile whilst conducting an outbound transit. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-12",
-        "type": "Attack",
-        "title": "Attack UKMTO #168 12 October 2026 UKMTO has received a time-late report of an incident within the Strait of Hormuz. A verified source has reported that a Products Tanker has been struck by an unknown projectile whilst conducting an outbound transit. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-12",
-        "type": "Attack",
-        "title": "Attack UKMTO #167 12 October 2026 UKMTO has received a time-late report from a verified source that a container vessel was struck by an unknown projectile while transiting inbound through of the Strait of Hormuz. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-10-12",
-        "type": "Attack",
-        "title": "Attack UKMTO #166 12 October 2026 UKMTO WARNING 166-26 - ATTACK Incident Date:11 Oct 2026 Incident Time:TBC Source Verified UKMTO has received a time late report of an incident in the Strait of Hormuz. An outbound tanker has been struck by an unknown projectile. The crew have been confirmed as safe, and the environmental impact is unknown at this time. Authorities are investigating. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
       }
     ]
   },
@@ -232,7 +212,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 109.38,
-    "ts": 1792443205
+    "price": 109.07,
+    "ts": 1792454947
   }
 }
