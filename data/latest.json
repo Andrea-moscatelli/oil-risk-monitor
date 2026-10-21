@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T10:08:23.436006+00:00",
+  "updated_at": "2026-10-21T15:14:34.359511+00:00",
   "vlcc": {
     "latest": 2618.92,
     "date": "2026-10-20",
@@ -129,10 +129,20 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 8,
     "window": "2026-10-14 → 2026-10-21",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "8 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-21",
+        "type": "Attack",
+        "title": "Attack UKMTO #179 21 October 2026 UKMTO WARNING 179-26 - ATTACK Incident Date:21 Oct 2026 Incident Time:0145UTC Local Authorities UKMTO has received a report of an incident 11NM west of Bukha, Oman. Local Authorities have reported that a Tanker has been struck by an unknown projectile which started a fire which has been extinguished. The Tanker is now at anchor. All crew are reported as safe. There is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
+      {
+        "date": "2026-10-20",
+        "type": "Attack",
+        "title": "Attack UKMTO #180 20 October 2026 UKMTO WARNING 180-26 - ATTACK Incident Date:20 Oct 2026 Incident Time:1830UTC Source: Master UKMTO has received a time late report of an incident 30NM southeast of Al Faw, Iraq. The Master of a tanker reports being struck by an unknown projectile, the crew are reported as safe and there is no reported damage or environmental impact. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. Advisory UKMTO #178 20 October 2026 UKMTO has received a report of an incident involving a tanker and military forces approximately 121NM east of Duqm, Oman. Reports indicate that the tanker was subject to interaction as part of ongoing military activity in the region. Authorities are aware and relevant investigations remain ongoing. Vessels are advised to consider the latest maritime security information a"
+      },
       {
         "date": "2026-10-18",
         "type": "Attack",
@@ -197,12 +207,12 @@
     ]
   },
   "score": {
-    "value": 5,
-    "label": "Segnale misto/attenzione",
+    "value": 6,
+    "label": "Tensione elevata",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 110.28,
-    "ts": 1792576695
+    "price": 109.14,
+    "ts": 1792595077
   }
 }
