@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-23T04:48:47.683890+00:00",
+  "updated_at": "2026-10-23T10:03:25.172751+00:00",
   "horizon_h": 24,
   "thresholds": {
     "buy_above": 6,
     "sell_below": 4
   },
   "counts": {
-    "total": 63,
-    "evaluated": 32,
+    "total": 64,
+    "evaluated": 33,
     "pending": 6,
     "skipped": 25
   },
   "baseline": {
-    "n": 32,
-    "up_rate": 0.6875,
-    "down_rate": 0.28125,
-    "avg_ret_pct": 0.89109375
+    "n": 33,
+    "up_rate": 0.696969696969697,
+    "down_rate": 0.2727272727272727,
+    "avg_ret_pct": 0.9463939393939395
   },
   "signals": {
     "BUY": {
@@ -23,8 +23,8 @@
       "hits": 2,
       "hit_rate": 0.6666666666666666,
       "avg_signed_ret_pct": 0.623,
-      "baseline_rate": 0.6875,
-      "p_value": 0.76806640625,
+      "baseline_rate": 0.696969696969697,
+      "p_value": 0.78017085455102,
       "pending": 0
     },
     "SELL": {
@@ -32,7 +32,7 @@
       "hits": 0,
       "hit_rate": null,
       "avg_signed_ret_pct": null,
-      "baseline_rate": 0.28125,
+      "baseline_rate": 0.2727272727272727,
       "p_value": null,
       "pending": 0
     }
@@ -70,9 +70,9 @@
     },
     {
       "score": 5,
-      "n": 2,
+      "n": 3,
       "up_rate": 1.0,
-      "avg_ret_pct": 0.8925000000000001
+      "avg_ret_pct": 1.5003333333333335
     },
     {
       "score": 6,
