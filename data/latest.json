@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T15:04:13.627808+00:00",
+  "updated_at": "2026-10-23T19:13:06.253073+00:00",
   "vlcc": {
     "latest": 2455.33,
     "date": "2026-10-22",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 7,
     "window": "2026-10-16 → 2026-10-23",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-22",
+        "type": "Attack",
+        "title": "Attack UKMTO #181 22 October 2026 UKMTO WARNING 181-26 ATTACK Incident Date: 22 OCT 2026 Incident Time: 1715UTC UKMTO has received a time-late report of an incident 7NM northeast of Limah, Oman. A tanker has reported being hit by an unknown projectile whilst transiting outbound in the Strait of Hormuz. The tanker was able to continue its voyage to the next port of call."
+      },
       {
         "date": "2026-10-21",
         "type": "Attack",
@@ -202,7 +207,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 111.36,
-    "ts": 1792767250
+    "price": 111.79,
+    "ts": 1792782188
   }
 }
