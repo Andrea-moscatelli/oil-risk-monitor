@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T22:14:31.990972+00:00",
+  "updated_at": "2026-10-24T00:48:21.408154+00:00",
   "vlcc": {
     "latest": 2455.33,
     "date": "2026-10-22",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 7,
-    "window": "2026-10-16 → 2026-10-23",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "count": 5,
+    "window": "2026-10-17 → 2026-10-24",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-22",
@@ -157,16 +157,6 @@
         "date": "2026-10-17",
         "type": "Attack",
         "title": "Attack UKMTO #176 17 October 2026 UKMTO has received a report of an incident 140NM southwest of Al Mukalla, Yemen. A Master of an LNG Tanker has reported being approached by a small skiff with seven persons onboard. The skiff fired two shots at the tanker whose armed Security Team fired two warning shots at the small skiff which forced them to alter course. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-16",
-        "type": "Attack",
-        "title": "Attack UKMTO #175 16 October 2026 UKMTO has received a report of an incident 78NM northeast of Al Jubayl, Saudi Arabia. The Master of a tanker has reported being attacked by an RPG from a small boat, resulting in damage to the aft port quarter. Crew are accounted for and reported safe. A complete damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-16",
-        "type": "Attack",
-        "title": "Attack UKMTO #174 16 October 2026 UKMTO has received a time-late report of an incident 68NM northeast of Al Jubayl, Saudi Arabia of a tanker stuck by an unknown projectile. All crew are reported safe and have been evacuated. There is no reported environmental impact at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO while authorities are investigating."
       }
     ]
   },
