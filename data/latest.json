@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T23:14:04.302038+00:00",
+  "updated_at": "2026-10-25T01:14:32.928253+00:00",
   "vlcc": {
     "latest": 2388.21,
     "date": "2026-10-23",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 5,
-    "window": "2026-10-17 → 2026-10-24",
-    "change7dText": "5 attacchi verificati UKMTO",
+    "count": 4,
+    "window": "2026-10-18 → 2026-10-25",
+    "change7dText": "4 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-22",
@@ -152,11 +152,6 @@
         "date": "2026-10-18",
         "type": "Attack",
         "title": "Attack UKMTO #177 18 October 2026 UKMTO WARNING 177-26 - ATTACK Incident Date: 18 OCT 2026 Incident Time: TBC UKMTO has received a report of an incident northeast of Khor Fakkan, UAE. A tug travelling southbound has reported being struck by 2 unknown projectiles. The tug has sustained damage but is continuing on its route. One minor casualty has been reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-17",
-        "type": "Attack",
-        "title": "Attack UKMTO #176 17 October 2026 UKMTO has received a report of an incident 140NM southwest of Al Mukalla, Yemen. A Master of an LNG Tanker has reported being approached by a small skiff with seven persons onboard. The skiff fired two shots at the tanker whose armed Security Team fired two warning shots at the small skiff which forced them to alter course. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
