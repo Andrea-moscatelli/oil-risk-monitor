@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T13:09:24.029055+00:00",
+  "updated_at": "2026-10-26T19:19:25.034544+00:00",
   "vlcc": {
     "latest": 2388.21,
     "date": "2026-10-23",
@@ -134,6 +134,11 @@
     "change7dText": "4 attacchi verificati UKMTO",
     "events": [
       {
+        "date": "2026-10-26",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #183 26 October 2026 UKMTO has received multiple third-party reports of a vessel on fire, 63NM southeast of Al-Faw, Iraq. Crew status, damage assessment, and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. s"
+      },
+      {
         "date": "2026-10-23",
         "type": "Attack",
         "title": "Attack UKMTO #182 23 October 2026 UKMTO has received a verified time-late report of an incident in the Strait of Hormuz. A tanker transiting outbound was struck by an unknown projectile, disabling the vessel. The crew have been reported safe. There is no damage assessment or environmental impact report at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
@@ -192,7 +197,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 110.24,
-    "ts": 1793019564
+    "price": 111.22,
+    "ts": 1793041757
   }
 }

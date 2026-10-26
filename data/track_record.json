@@ -961,5 +961,17 @@
   "status": "pending",
   "reason": null,
   "outcome": null
+ },
+ {
+  "timestamp": "2026-10-26T19:19:25.034544+00:00",
+  "score": 5,
+  "score_version": 1,
+  "signal": "NEUTRAL",
+  "target_ts": "2026-10-27T19:19:25.034544+00:00",
+  "brent_entry": 111.22,
+  "brent_entry_ts": "2026-10-26T19:09:17+00:00",
+  "status": "pending",
+  "reason": null,
+  "outcome": null
  }
 ]
