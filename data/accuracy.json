@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-25T22:33:24.323289+00:00",
+  "updated_at": "2026-10-26T01:10:02.387581+00:00",
   "horizon_h": 24,
   "thresholds": {
     "buy_above": 6,
     "sell_below": 4
   },
   "counts": {
-    "total": 67,
+    "total": 68,
     "evaluated": 41,
-    "pending": 1,
+    "pending": 2,
     "skipped": 25
   },
   "baseline": {

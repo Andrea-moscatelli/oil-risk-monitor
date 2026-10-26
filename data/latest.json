@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T22:33:24.323289+00:00",
+  "updated_at": "2026-10-26T01:10:02.387581+00:00",
   "vlcc": {
     "latest": 2388.21,
     "date": "2026-10-23",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 4,
-    "window": "2026-10-18 → 2026-10-25",
-    "change7dText": "4 attacchi verificati UKMTO",
+    "count": 3,
+    "window": "2026-10-19 → 2026-10-26",
+    "change7dText": "3 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-22",
@@ -147,11 +147,6 @@
         "date": "2026-10-20",
         "type": "Attack",
         "title": "Attack UKMTO #180 20 October 2026 UKMTO WARNING 180-26 - ATTACK Incident Date:20 Oct 2026 Incident Time:1830UTC Source: Master UKMTO has received a time late report of an incident 30NM southeast of Al Faw, Iraq. The Master of a tanker reports being struck by an unknown projectile, the crew are reported as safe and there is no reported damage or environmental impact. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. Advisory UKMTO #178 20 October 2026 UKMTO has received a report of an incident involving a tanker and military forces approximately 121NM east of Duqm, Oman. Reports indicate that the tanker was subject to interaction as part of ongoing military activity in the region. Authorities are aware and relevant investigations remain ongoing. Vessels are advised to consider the latest maritime security information a"
-      },
-      {
-        "date": "2026-10-18",
-        "type": "Attack",
-        "title": "Attack UKMTO #177 18 October 2026 UKMTO WARNING 177-26 - ATTACK Incident Date: 18 OCT 2026 Incident Time: TBC UKMTO has received a report of an incident northeast of Khor Fakkan, UAE. A tug travelling southbound has reported being struck by 2 unknown projectiles. The tug has sustained damage but is continuing on its route. One minor casualty has been reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -187,12 +182,12 @@
     ]
   },
   "score": {
-    "value": 5,
+    "value": 4,
     "label": "Segnale misto/attenzione",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 110.81,
-    "ts": 1792967006
+    "price": 110.3,
+    "ts": 1792976405
   }
 }
