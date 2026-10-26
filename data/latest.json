@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T06:13:40.464188+00:00",
+  "updated_at": "2026-10-26T13:09:24.029055+00:00",
   "vlcc": {
     "latest": 2388.21,
     "date": "2026-10-23",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 3,
+    "count": 4,
     "window": "2026-10-19 → 2026-10-26",
-    "change7dText": "3 attacchi verificati UKMTO",
+    "change7dText": "4 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-23",
+        "type": "Attack",
+        "title": "Attack UKMTO #182 23 October 2026 UKMTO has received a verified time-late report of an incident in the Strait of Hormuz. A tanker transiting outbound was struck by an unknown projectile, disabling the vessel. The crew have been reported safe. There is no damage assessment or environmental impact report at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-22",
         "type": "Attack",
@@ -182,12 +187,12 @@
     ]
   },
   "score": {
-    "value": 4,
+    "value": 5,
     "label": "Segnale misto/attenzione",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 109.49,
-    "ts": 1792994540
+    "price": 110.24,
+    "ts": 1793019564
   }
 }
