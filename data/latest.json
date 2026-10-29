@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-10-29T00:56:25.286463+00:00",
+  "updated_at": "2026-10-29T07:04:29.087178+00:00",
   "vlcc": {
-    "latest": 2509.33,
-    "date": "2026-10-27",
-    "change1d": 4.941075117724303,
-    "change48h": 5.071580807382925,
+    "latest": 2512.04,
+    "date": "2026-10-28",
+    "change1d": 0.10799695536258813,
+    "change48h": 5.054408283776213,
     "history": [
-      {
-        "date": "2026-09-16",
-        "value": 2154.46
-      },
       {
         "date": "2026-09-17",
         "value": 2182.42
@@ -125,6 +121,10 @@
       {
         "date": "2026-10-27",
         "value": 2509.33
+      },
+      {
+        "date": "2026-10-28",
+        "value": 2512.04
       }
     ]
   },
@@ -133,6 +133,11 @@
     "window": "2026-10-22 → 2026-10-29",
     "change7dText": "2 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-29",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #185 29 October 2026 UKMTO has received a report of an incident occurring in the Strait of Hormuz, 9NM north of Khasab, Oman. The Master of a third-party vessel has reported sighting another vessel on fire. Status of crew is unknown. There is no damage assessment or environmental impact report at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. Advisory UKMTO #184 28 October 2026 UKMTO has received reports from various sources of suspicious activity within the Gulf of Aden. Potentially indicative of Pirate Action Group Activity. Reports describe several sightings of suspicious small craft operating in the vicinity of merchant vessels. One report describes a green and blue boat with two ladders and one hook with 9 persons onboard. Vessels transiting the area are advised to transit wi"
+      },
       {
         "date": "2026-10-26",
         "type": "Suspicious Activity",
@@ -187,7 +192,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 110.79,
-    "ts": 1793234714
+    "price": 110.15,
+    "ts": 1793256849
   }
 }
