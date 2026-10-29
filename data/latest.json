@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:04:04.613255+00:00",
+  "updated_at": "2026-10-29T00:56:25.286463+00:00",
   "vlcc": {
     "latest": 2509.33,
     "date": "2026-10-27",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 3,
-    "window": "2026-10-21 → 2026-10-28",
-    "change7dText": "3 attacchi verificati UKMTO",
+    "count": 2,
+    "window": "2026-10-22 → 2026-10-29",
+    "change7dText": "2 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-26",
@@ -147,11 +147,6 @@
         "date": "2026-10-22",
         "type": "Attack",
         "title": "Attack UKMTO #181 22 October 2026 UKMTO WARNING 181-26 ATTACK Incident Date: 22 OCT 2026 Incident Time: 1715UTC UKMTO has received a time-late report of an incident 7NM northeast of Limah, Oman. A tanker has reported being hit by an unknown projectile whilst transiting outbound in the Strait of Hormuz. The tanker was able to continue its voyage to the next port of call."
-      },
-      {
-        "date": "2026-10-21",
-        "type": "Attack",
-        "title": "Attack UKMTO #179 21 October 2026 UKMTO WARNING 179-26 - ATTACK Incident Date:21 Oct 2026 Incident Time:0145UTC Local Authorities UKMTO has received a report of an incident 11NM west of Bukha, Oman. Local Authorities have reported that a Tanker has been struck by an unknown projectile which started a fire which has been extinguished. The Tanker is now at anchor. All crew are reported as safe. There is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -192,7 +187,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 110.6,
-    "ts": 1793220706
+    "price": 110.79,
+    "ts": 1793234714
   }
 }
