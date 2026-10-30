@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T20:17:50.964178+00:00",
+  "updated_at": "2026-10-30T00:59:11.538415+00:00",
   "vlcc": {
     "latest": 2512.04,
     "date": "2026-10-28",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 3,
-    "window": "2026-10-22 → 2026-10-29",
-    "change7dText": "3 attacchi verificati UKMTO",
+    "count": 2,
+    "window": "2026-10-23 → 2026-10-30",
+    "change7dText": "2 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-29",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #187 29 October 2026 UKMTO has received a report of an incident 25NM Northeast of Khasab, Oman in the Strait of Hormuz. A third-party has reported that a vessel transiting outbound is on fire, the cause is unknown at time of report. Status of crew, damage assessment, and environmental impact are unknown at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-29",
         "type": "Attack",
@@ -152,11 +157,6 @@
         "date": "2026-10-23",
         "type": "Attack",
         "title": "Attack UKMTO #182 23 October 2026 UKMTO has received a verified time-late report of an incident in the Strait of Hormuz. A tanker transiting outbound was struck by an unknown projectile, disabling the vessel. The crew have been reported safe. There is no damage assessment or environmental impact report at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-10-22",
-        "type": "Attack",
-        "title": "Attack UKMTO #181 22 October 2026 UKMTO WARNING 181-26 ATTACK Incident Date: 22 OCT 2026 Incident Time: 1715UTC UKMTO has received a time-late report of an incident 7NM northeast of Limah, Oman. A tanker has reported being hit by an unknown projectile whilst transiting outbound in the Strait of Hormuz. The tanker was able to continue its voyage to the next port of call."
       }
     ]
   },
@@ -197,7 +197,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 111.63,
-    "ts": 1793304459
+    "price": 111.41,
+    "ts": 1793321218
   }
 }
