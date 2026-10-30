@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:07:58.860956+00:00",
+  "updated_at": "2026-10-30T19:21:58.554372+00:00",
   "vlcc": {
     "latest": 2608.57,
     "date": "2026-10-29",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 3,
+    "count": 4,
     "window": "2026-10-23 → 2026-10-30",
-    "change7dText": "3 attacchi verificati UKMTO",
+    "change7dText": "4 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-30",
+        "type": "Attack",
+        "title": "Attack UKMTO #188 30 October 2026 UKMTO has received a report of an incident 40NM south of Lavan Island, Iran. UKMTO has received a report that an vessel has been hit by an unknown projectile on the port side which has caused a fire onboard. The crew of the vessel have been reported as safe and there is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-29",
         "type": "Attack",
@@ -192,12 +197,12 @@
     ]
   },
   "score": {
-    "value": 4,
+    "value": 5,
     "label": "Segnale misto/attenzione",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 113.56,
-    "ts": 1793368476
+    "price": 113.4,
+    "ts": 1793387492
   }
 }
