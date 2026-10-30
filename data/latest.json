@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T07:05:41.887170+00:00",
+  "updated_at": "2026-10-30T14:07:58.860956+00:00",
   "vlcc": {
     "latest": 2608.57,
     "date": "2026-10-29",
@@ -129,14 +129,14 @@
     ]
   },
   "attacks": {
-    "count": 2,
+    "count": 3,
     "window": "2026-10-23 → 2026-10-30",
-    "change7dText": "2 attacchi verificati UKMTO",
+    "change7dText": "3 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-10-29",
-        "type": "Suspicious Activity",
-        "title": "Suspicious Activity UKMTO #187 29 October 2026 UKMTO has received a report of an incident 25NM Northeast of Khasab, Oman in the Strait of Hormuz. A third-party has reported that a vessel transiting outbound is on fire, the cause is unknown at time of report. Status of crew, damage assessment, and environmental impact are unknown at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+        "type": "Attack",
+        "title": "Attack UKMTO #187 29 October 2026 Incident Date: 29 OCT 2026 Incident Time: 2212 UTC. UKMTO has received a report of an incident 25NM Northeast of Khasab, Oman in the Strait of Hormuz. A third-party has reported that a vessel transiting outbound is on fire, the cause is unknown at time of report. Status of crew, damage assessment, and environmental impact are unknown at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. UPDATE 001 300150ZOCT26: UKMTO has received a verified report confirming the crew are safe, and there is no environmental impact. The report indicates that the tanker was approached on the port side by a small boat which attached two explosive devices to the hull above the waterline. The subsequent blasts resulted in a fire in the engine room which temporarily disabled the vessel. The fire is n"
       },
       {
         "date": "2026-10-29",
@@ -197,7 +197,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 111.85,
-    "ts": 1793343343
+    "price": 113.56,
+    "ts": 1793368476
   }
 }
