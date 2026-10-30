@@ -1177,9 +1177,12 @@
   "target_ts": "2026-10-30T20:17:50.964178+00:00",
   "brent_entry": 111.63,
   "brent_entry_ts": "2026-10-29T20:07:39+00:00",
-  "status": "pending",
+  "status": "evaluated",
   "reason": null,
-  "outcome": null
+  "outcome": null,
+  "brent_exit": 112.33000183105469,
+  "brent_exit_ts": "2026-10-30T20:59:57+00:00",
+  "ret24h_pct": 0.627
  },
  {
   "timestamp": "2026-10-30T00:59:11.538415+00:00",
