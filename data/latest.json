@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T17:43:35.022577+00:00",
+  "updated_at": "2026-10-31T21:33:30.451783+00:00",
   "vlcc": {
     "latest": 2650.01,
     "date": "2026-10-30",
@@ -133,6 +133,11 @@
     "window": "2026-10-24 → 2026-10-31",
     "change7dText": "4 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-10-31",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #190 31 October 2026 UKMTO has received information that a large fishing vessel has been boarded by unauthorised personnel. Authorities are concerned that this activity will form part of a PAG (Pirate Action Group). Vessels are advised to transit with caution and adopt all BMP measures. Any suspicious activity to be reported to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-30",
         "type": "Attack",
