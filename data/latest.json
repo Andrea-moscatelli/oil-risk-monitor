@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T15:07:15.543246+00:00",
+  "updated_at": "2026-11-01T19:39:34.411505+00:00",
   "vlcc": {
     "latest": 2650.01,
     "date": "2026-10-30",
@@ -129,14 +129,19 @@
     ]
   },
   "attacks": {
-    "count": 4,
+    "count": 5,
     "window": "2026-10-25 → 2026-11-01",
-    "change7dText": "4 attacchi verificati UKMTO",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-01",
+        "type": "Attack",
+        "title": "Attack UKMTO #191 1 November 2026 UKMTO has received a report of an incident within the Strait of Hormuz. The Master of a merchant vessel has relayed a Mayday call from VHF Ch 16, stating that another vessel has been struck by an unknown projectile. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-10-31",
         "type": "Suspicious Activity",
-        "title": "Suspicious Activity UKMTO #190 31 October 2026 UKMTO has received information that a large fishing vessel has been boarded by unauthorised personnel. Authorities are concerned that this activity will form part of a PAG (Pirate Action Group). Vessels are advised to transit with caution and adopt all BMP measures. Any suspicious activity to be reported to UKMTO, whilst authorities investigate."
+        "title": "Suspicious Activity UKMTO #190 31 October 2026 UKMTO has received information that a large fishing vessel has been boarded by unauthorised personnel. Authorities are concerned that this activity will form part of a PAG (Pirate Action Group). Vessels are advised to transit with caution and adopt all BMP measures. Any suspicious activity to be reported to UKMTO, whilst authorities investigate. Update 001: UKMTO has reclassified this incident to HIJACK to accurately reflect the incident information."
       },
       {
         "date": "2026-10-30",
