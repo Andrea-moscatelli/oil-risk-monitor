@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T23:35:41.478233+00:00",
+  "updated_at": "2026-11-02T06:00:59.544597+00:00",
   "vlcc": {
     "latest": 2650.01,
     "date": "2026-10-30",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 5,
-    "window": "2026-10-25 → 2026-11-01",
-    "change7dText": "5 attacchi verificati UKMTO",
+    "count": 6,
+    "window": "2026-10-26 → 2026-11-02",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-02",
+        "type": "Attack",
+        "title": "Attack UKMTO #192 2 November 2026 UKMTO has received a report of an incident 72NM east of RAS AL KHAFJI, SAUDI ARABIA. A tanker travelling southeast through the Arabian Gulf has been struck by 2 unknown projectiles on the port side. All crew are accounted for and there is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-01",
         "type": "Attack",
@@ -212,7 +217,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 111.65,
-    "ts": 1793575443
+    "price": 109.77,
+    "ts": 1793598659
   }
 }
