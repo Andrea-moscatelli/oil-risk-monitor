@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T15:50:20.652291+00:00",
+  "updated_at": "2026-11-02T23:30:02.681798+00:00",
   "vlcc": {
     "latest": 2650.01,
     "date": "2026-10-30",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 7,
     "window": "2026-10-26 → 2026-11-02",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-02",
+        "type": "Attack",
+        "title": "Attack UKMTO #193 2 November 2026 UKMTO WARNING 192-26. UKMTO has received a report of an incident 9NM northeast of Lima, Oman. The Master reports the vessel has been struck by an unknown projectile which has caused a hole on the starboard side. Vessel and crew safe, no environmental impact reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-02",
         "type": "Attack",
@@ -151,7 +156,7 @@
       {
         "date": "2026-10-30",
         "type": "Attack",
-        "title": "Attack UKMTO #188 30 October 2026 UKMTO has received a report of an incident 40NM south of Lavan Island, Iran. UKMTO has received a report that an vessel has been hit by an unknown projectile on the port side which has caused a fire onboard. The crew of the vessel have been reported as safe and there is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+        "title": "Attack UKMTO #188 30 October 2026 UKMTO WARNING 188-26. UKMTO has received a report of an incident 40NM south of Lavan Island, Iran. UKMTO has received a report that an vessel has been hit by an unknown projectile on the port side which has caused a fire onboard. The crew of the vessel have been reported as safe and there is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       },
       {
         "date": "2026-10-29",
@@ -212,7 +217,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 105.77,
-    "ts": 1793634013
+    "price": 104.3,
+    "ts": 1793661544
   }
 }
