@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:30:02.681798+00:00",
+  "updated_at": "2026-11-03T06:46:43.972995+00:00",
   "vlcc": {
     "latest": 2650.01,
     "date": "2026-10-30",
@@ -130,7 +130,7 @@
   },
   "attacks": {
     "count": 7,
-    "window": "2026-10-26 → 2026-11-02",
+    "window": "2026-10-27 → 2026-11-03",
     "change7dText": "7 attacchi verificati UKMTO",
     "events": [
       {
@@ -172,11 +172,6 @@
         "date": "2026-10-29",
         "type": "Suspicious Activity",
         "title": "Suspicious Activity UKMTO #185 29 October 2026 UKMTO has received a report of an incident occurring in the Strait of Hormuz, 9NM north of Khasab, Oman. The Master of a third-party vessel has reported sighting another vessel on fire. Status of crew is unknown. There is no damage assessment or environmental impact UPDATE 001: Regional authorities have identified the vessel as a dhow, which was involved in a maritime security incident, igniting a large fire onboard causing the dhow to list and sink. Local authorities have confirmed that the crew have been safely evacuated. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. report at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. Advisory UKMTO #184 28 October 2026 UKMTO has received reports"
-      },
-      {
-        "date": "2026-10-26",
-        "type": "Suspicious Activity",
-        "title": "Suspicious Activity UKMTO #183 26 October 2026 UKMTO has received multiple third-party reports of a vessel on fire, 63NM southeast of Al-Faw, Iraq. Crew status, damage assessment, and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. s"
       }
     ]
   },
@@ -217,7 +212,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 104.3,
-    "ts": 1793661544
+    "price": 105.86,
+    "ts": 1793687761
   }
 }
