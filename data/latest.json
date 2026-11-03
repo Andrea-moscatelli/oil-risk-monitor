@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-11-03T06:46:43.972995+00:00",
+  "updated_at": "2026-11-03T15:06:50.879096+00:00",
   "vlcc": {
-    "latest": 2650.01,
-    "date": "2026-10-30",
-    "change1d": 1.5886098513745006,
-    "change48h": 5.492348847948292,
+    "latest": 2678.42,
+    "date": "2026-11-02",
+    "change1d": 1.07207142614556,
+    "change48h": 2.6777123098095768,
     "history": [
-      {
-        "date": "2026-09-21",
-        "value": 2277.66
-      },
       {
         "date": "2026-09-22",
         "value": 2261.48
@@ -125,18 +121,27 @@
       {
         "date": "2026-10-30",
         "value": 2650.01
+      },
+      {
+        "date": "2026-11-02",
+        "value": 2678.42
       }
     ]
   },
   "attacks": {
-    "count": 7,
+    "count": 8,
     "window": "2026-10-27 → 2026-11-03",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "change7dText": "8 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-02",
         "type": "Attack",
         "title": "Attack UKMTO #193 2 November 2026 UKMTO WARNING 192-26. UKMTO has received a report of an incident 9NM northeast of Lima, Oman. The Master reports the vessel has been struck by an unknown projectile which has caused a hole on the starboard side. Vessel and crew safe, no environmental impact reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
+      {
+        "date": "2026-11-02",
+        "type": "Attack",
+        "title": "Attack UKMTO #194 2 November 2026 20261103-UKMTO_WARNING 194-26 UKMTO is aware of a report by the Indian Government of an attack on an Indian crewed Dhow whilst sailing outbound through the Strait of Hormuz. The Omani Royal Navy have rescued the surviving crew. UKMTO is unaware of the status of the vessel. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       },
       {
         "date": "2026-11-02",
@@ -212,7 +217,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 105.86,
-    "ts": 1793687761
+    "price": 103.47,
+    "ts": 1793717811
   }
 }
