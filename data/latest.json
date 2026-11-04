@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T17:15:36.205776+00:00",
+  "updated_at": "2026-11-04T22:40:25.810705+00:00",
   "vlcc": {
     "latest": 2639.3,
     "date": "2026-11-03",
@@ -186,14 +186,10 @@
     ]
   },
   "stocks": {
-    "latest": 1495139,
-    "change": -3106,
-    "date": "2026-10-23",
+    "latest": 1486558,
+    "change": -8581,
+    "date": "2026-10-30",
     "history": [
-      {
-        "date": "2026-09-18",
-        "value": 1535908.0
-      },
       {
         "date": "2026-09-25",
         "value": 1528080.0
@@ -213,16 +209,20 @@
       {
         "date": "2026-10-23",
         "value": 1495139.0
+      },
+      {
+        "date": "2026-10-30",
+        "value": 1486558.0
       }
     ]
   },
   "score": {
-    "value": 5,
-    "label": "Segnale misto/attenzione",
+    "value": 6,
+    "label": "Tensione elevata",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 95.06,
-    "ts": 1793811939
+    "price": 94.63,
+    "ts": 1793829557
   }
 }
