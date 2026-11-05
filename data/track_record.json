@@ -1372,9 +1372,12 @@
   "target_ts": "2026-11-05T09:11:02.450352+00:00",
   "brent_entry": 103.8,
   "brent_entry_ts": "2026-11-04T09:01:01+00:00",
-  "status": "pending",
+  "status": "evaluated",
   "reason": null,
-  "outcome": null
+  "outcome": null,
+  "brent_exit": 95.9000015258789,
+  "brent_exit_ts": "2026-11-05T10:00:00+00:00",
+  "ret24h_pct": -7.611
  },
  {
   "timestamp": "2026-11-04T17:15:36.205776+00:00",
@@ -1396,6 +1399,18 @@
   "target_ts": "2026-11-06T03:29:49.660542+00:00",
   "brent_entry": 93.97,
   "brent_entry_ts": "2026-11-05T03:19:21+00:00",
+  "status": "pending",
+  "reason": null,
+  "outcome": null
+ },
+ {
+  "timestamp": "2026-11-05T12:20:02.438221+00:00",
+  "score": 6,
+  "score_version": 1,
+  "signal": "NEUTRAL",
+  "target_ts": "2026-11-06T12:20:02.438221+00:00",
+  "brent_entry": 96.59,
+  "brent_entry_ts": "2026-11-05T12:09:59+00:00",
   "status": "pending",
   "reason": null,
   "outcome": null
