@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:25:50.991671+00:00",
+  "updated_at": "2026-11-09T17:28:49.430751+00:00",
   "vlcc": {
     "latest": 2230.95,
     "date": "2026-11-06",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 7,
+    "count": 8,
     "window": "2026-11-02 → 2026-11-09",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "change7dText": "8 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-08",
@@ -140,8 +140,8 @@
       },
       {
         "date": "2026-11-08",
-        "type": "Suspicious Activity",
-        "title": "Suspicious Activity UKMTO #199 8 November 2026 UKMTO has received a time-late report of an incident 8NM northwest of Khasab, Oman. Military authorities reported the Tanker is on fire which has resulted in the evacuation of the crew. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. Advisory UKMTO #198 7 November 2026 UKMTO has received a report of an incident involving a bulk carrier and military forces in the Gulf of Oman, approximately 18NM east of Khor Fakkan, UAE. Status of crew, damage assessment and environmental impact are unknown at time of report. Authorities are aware and relevant investigations remain ongoing. Vessels are advised to consider the latest maritime security information and maintain awareness of the evolving operational environment."
+        "type": "Attack",
+        "title": "Attack UKMTO #199 8 November 2026 UKMTO has received a time-late report of an incident 8NM northwest of Khasab, Oman. Military authorities reported the Tanker is on fire which has resulted in the evacuation of the crew. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. UPDATE 001 UKMTO has reclassified this incident to ATTACK. Advisory UKMTO #198 7 November 2026 UKMTO has received a report of an incident involving a bulk carrier and military forces in the Gulf of Oman, approximately 18NM east of Khor Fakkan, UAE. Status of crew, damage assessment and environmental impact are unknown at time of report. Authorities are aware and relevant investigations remain ongoing. Vessels are advised to consider the latest maritime security information and maintain awareness of the evolving operational environment."
       },
       {
         "date": "2026-11-06",
@@ -207,12 +207,12 @@
     ]
   },
   "score": {
-    "value": 5,
-    "label": "Segnale misto/attenzione",
+    "value": 6,
+    "label": "Tensione elevata",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 96.96,
-    "ts": 1794204920
+    "price": 93.93,
+    "ts": 1794244730
   }
 }
