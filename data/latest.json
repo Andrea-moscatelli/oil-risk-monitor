@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:28:49.430751+00:00",
+  "updated_at": "2026-11-10T01:30:28.598777+00:00",
   "vlcc": {
     "latest": 2230.95,
     "date": "2026-11-06",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 8,
-    "window": "2026-11-02 → 2026-11-09",
-    "change7dText": "8 attacchi verificati UKMTO",
+    "count": 6,
+    "window": "2026-11-03 → 2026-11-10",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-08",
@@ -162,16 +162,6 @@
         "date": "2026-11-03",
         "type": "Attack",
         "title": "Attack UKMTO #194 3 November 2026 20261103-UKMTO_WARNING 194-26 UKMTO is aware of a report by the Indian Government of an attack on an Indian crewed Dhow whilst sailing outbound through the Strait of Hormuz. The Omani Royal Navy have rescued the surviving crew. UKMTO is unaware of the status of the vessel. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-02",
-        "type": "Attack",
-        "title": "Attack UKMTO #193 2 November 2026 UKMTO WARNING 193-26. UKMTO has received a report of an incident 9NM northeast of Lima, Oman. The Master reports the vessel has been struck by an unknown projectile which has caused a hole on the starboard side. Vessel and crew safe, no environmental impact reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-02",
-        "type": "Attack",
-        "title": "Attack UKMTO #192 2 November 2026 UKMTO WARNING 192-2026. UKMTO has received a report of an incident 72NM east of RAS AL KHAFJI, SAUDI ARABIA. A tanker travelling southeast through the Arabian Gulf has been struck by 2 unknown projectiles on the port side. All crew are accounted for and there is no reported environmental impact at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -207,12 +197,12 @@
     ]
   },
   "score": {
-    "value": 6,
-    "label": "Tensione elevata",
+    "value": 5,
+    "label": "Segnale misto/attenzione",
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 93.93,
-    "ts": 1794244730
+    "price": 92.06,
+    "ts": 1794273611
   }
 }
