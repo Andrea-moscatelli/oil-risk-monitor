@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T09:49:59.766905+00:00",
+  "updated_at": "2026-11-10T17:50:05.820891+00:00",
   "vlcc": {
     "latest": 1962.03,
     "date": "2026-11-09",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 7,
     "window": "2026-11-03 → 2026-11-10",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-10",
+        "type": "Attack",
+        "title": "Attack UKMTO #201 10 November 2026 UKMTO INCIDENT 201-26 UKMTO has received a report of an incident 19NM northeast of Lima, Oman. The Master of a Tanker reports being struck by an unknown projectile. The crew are safe and there is no environmental impact reported. Master will conduct damage assessment at first light. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-08",
         "type": "Attack",
@@ -202,7 +207,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 89.97,
-    "ts": 1794303602
+    "price": 91.99,
+    "ts": 1794332391
   }
 }
