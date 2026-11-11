@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T23:20:23.361595+00:00",
+  "updated_at": "2026-11-11T06:17:21.547066+00:00",
   "vlcc": {
     "latest": 1962.03,
     "date": "2026-11-09",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 7,
-    "window": "2026-11-03 → 2026-11-10",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "count": 5,
+    "window": "2026-11-04 → 2026-11-11",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-11",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #202 11 November 2026 UKMTO has received a report of an incident involving a tanker in the Strait of Hormuz. The status of crew, damage assessment, and environmental impact are unknown at the time of this report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-10",
         "type": "Attack",
@@ -157,16 +162,6 @@
         "date": "2026-11-05",
         "type": "Attack",
         "title": "Attack UKMTO #196 5 November 2026 UKMTO has received a report of an incident 50NM North of Madinat ash Shamal, Qatar. A tanker has been struck by two unidentified projectiles. The status of the crew, damage assessment and environmental impact are unconfirmed at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO while authorities continue to investigate."
-      },
-      {
-        "date": "2026-11-03",
-        "type": "Attack",
-        "title": "Attack UKMTO #195 3 November 2026 UKMTO INCIDENT 195-26: UKMTO has received a report of an incident 14NM northeast of Lima, Oman. The Company Security Officer for a Tanker reports being struck by two unknown projectiles into the engine room. There are no casualties or environmental impact reported as this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-03",
-        "type": "Attack",
-        "title": "Attack UKMTO #194 3 November 2026 20261103-UKMTO_WARNING 194-26 UKMTO is aware of a report by the Indian Government of an attack on an Indian crewed Dhow whilst sailing outbound through the Strait of Hormuz. The Omani Royal Navy have rescued the surviving crew. UKMTO is unaware of the status of the vessel. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -207,7 +202,7 @@
     "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 92.05,
-    "ts": 1794351946
+    "price": 92.52,
+    "ts": 1794377244
   }
 }
