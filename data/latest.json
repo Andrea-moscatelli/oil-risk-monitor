@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T18:55:50.716688+00:00",
+  "updated_at": "2026-11-13T00:22:44.436814+00:00",
   "vlcc": {
     "latest": 1668.52,
     "date": "2026-11-11",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 7,
-    "window": "2026-11-05 → 2026-11-12",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "count": 6,
+    "window": "2026-11-06 → 2026-11-13",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-11",
@@ -167,23 +167,14 @@
         "date": "2026-11-06",
         "type": "Attack",
         "title": "Attack UKMTO #197 6 November 2026 UKMTO WARNING 197-26. UKMTO has received a time-late report of an incident 16NM east of Khasab, Oman. The Master of a Tanker transiting the Strait of Hormuz outbound, has reported an explosion at the waterline, port side. The crew are safe and are accounted for. The tanker is still under its own power and is continuing on its voyage. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-05",
-        "type": "Attack",
-        "title": "Attack UKMTO #196 5 November 2026 UKMTO WARNING 196-26. UKMTO has received a report of an incident 50NM North of Madinat ash Shamal, Qatar. A tanker has been struck by two unidentified projectiles. The status of the crew, damage assessment and environmental impact are unconfirmed at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO while authorities continue to investigate."
       }
     ]
   },
   "stocks": {
-    "latest": 1486558,
-    "change": -8581,
-    "date": "2026-10-30",
+    "latest": 1495268,
+    "change": 8710,
+    "date": "2026-11-06",
     "history": [
-      {
-        "date": "2026-09-25",
-        "value": 1528080.0
-      },
       {
         "date": "2026-10-02",
         "value": 1520383.0
@@ -203,16 +194,20 @@
       {
         "date": "2026-10-30",
         "value": 1486558.0
+      },
+      {
+        "date": "2026-11-06",
+        "value": 1495268.0
       }
     ]
   },
   "score": {
-    "value": 5,
-    "label": "Segnale misto/attenzione",
-    "signal": "NEUTRAL"
+    "value": 2,
+    "label": "Pressione bassa",
+    "signal": "SELL"
   },
   "brent": {
-    "price": 95.25,
-    "ts": 1794509093
+    "price": 95.88,
+    "ts": 1794527831
   }
 }
