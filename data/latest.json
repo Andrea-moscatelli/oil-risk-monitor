@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:37:32.429426+00:00",
+  "updated_at": "2026-11-14T03:14:20.909305+00:00",
   "vlcc": {
     "latest": 1485.63,
     "date": "2026-11-12",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 6,
-    "window": "2026-11-06 → 2026-11-13",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "count": 5,
+    "window": "2026-11-07 → 2026-11-14",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-11",
@@ -162,11 +162,6 @@
         "date": "2026-11-08",
         "type": "Attack",
         "title": "Attack UKMTO #199 8 November 2026 UKMTO WARNING 199-26. UKMTO has received a time-late report of an incident 8NM northwest of Khasab, Oman. Military authorities reported the Tanker is on fire which has resulted in the evacuation of the crew. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate. UPDATE 001 UKMTO has reclassified this incident to ATTACK. Advisory UKMTO #198 7 November 2026 UKMTO ADVISORY 198-26. UKMTO has received a report of an incident involving a bulk carrier and military forces in the Gulf of Oman, approximately 18NM east of Khor Fakkan, UAE. Status of crew, damage assessment and environmental impact are unknown at time of report. Authorities are aware and relevant investigations remain ongoing. Vessels are advised to consider the latest maritime security information and maintain awareness of the evolvi"
-      },
-      {
-        "date": "2026-11-06",
-        "type": "Attack",
-        "title": "Attack UKMTO #197 6 November 2026 UKMTO WARNING 197-26. UKMTO has received a time-late report of an incident 16NM east of Khasab, Oman. The Master of a Tanker transiting the Strait of Hormuz outbound, has reported an explosion at the waterline, port side. The crew are safe and are accounted for. The tanker is still under its own power and is continuing on its voyage. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
