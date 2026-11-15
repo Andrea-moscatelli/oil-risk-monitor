@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T09:25:19.480764+00:00",
+  "updated_at": "2026-11-15T17:09:56.094330+00:00",
   "vlcc": {
     "latest": 1444.85,
     "date": "2026-11-13",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 5,
+    "count": 6,
     "window": "2026-11-08 → 2026-11-15",
-    "change7dText": "5 attacchi verificati UKMTO",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-15",
+        "type": "Attack",
+        "title": "Attack UKMTO #205 15 November 2026 UKMTO is aware of a report by Indian Shipping Authorities of an attack on a Tanker while transiting through the Arabian Gulf eastbound prior to entering the Strait of Hormuz. The crew are accounted for and safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
+      },
       {
         "date": "2026-11-11",
         "type": "Attack",
