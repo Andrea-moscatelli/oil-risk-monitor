@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T02:06:10.891197+00:00",
+  "updated_at": "2026-11-16T09:42:18.805957+00:00",
   "vlcc": {
     "latest": 1444.85,
     "date": "2026-11-13",
@@ -129,10 +129,20 @@
     ]
   },
   "attacks": {
-    "count": 4,
+    "count": 5,
     "window": "2026-11-09 → 2026-11-16",
-    "change7dText": "4 attacchi verificati UKMTO",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-16",
+        "type": "Attack",
+        "title": "Attack UKMTO #207 16 November 2026 UKMTO has received a report of an incident in the Strait of Hormuz. The Company Security Officer of a Tanker has reported the vessel being struck by an unknown projectile whilst transiting outbound. This resulted in a fire in the engine room. No casualties have been reported and all crew have been accounted for. Damage assessment and environmental impact unknown at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
+      {
+        "date": "2026-11-16",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #206 16 November 2026 UKMTO WARNING 206-26 - SUSPICIOUS ACTIVITY Incident Date: 16 Nov 26 Incident Time: 0330UTC UKMTO has received a report of an incident 430NM east of Socotra, Yemen. The Master of a tanker has reported being approached by a possible mothership and skiff in position 1202N 06147E. Four armed persons were sighted onboard the skiff, with a ladder also visible. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-15",
         "type": "Attack",
@@ -197,7 +207,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 95.28,
-    "ts": 1794794065
+    "price": 92.2,
+    "ts": 1794821466
   }
 }
