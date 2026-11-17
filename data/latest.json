@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T20:29:05.273796+00:00",
+  "updated_at": "2026-11-17T03:53:26.676106+00:00",
   "vlcc": {
     "latest": 1444.85,
     "date": "2026-11-13",
@@ -129,10 +129,15 @@
     ]
   },
   "attacks": {
-    "count": 5,
-    "window": "2026-11-09 → 2026-11-16",
-    "change7dText": "5 attacchi verificati UKMTO",
+    "count": 6,
+    "window": "2026-11-10 → 2026-11-17",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-16",
+        "type": "Attack",
+        "title": "Attack UKMTO #208 16 November 2026 UKMTO has received a report of an incident 7NM north of Khasab, Oman. A third-party has reported an attack involving a tanker transiting the Strait of Hormuz, disabling the vessel and resulting in an engine room fire. The crew have been reported safe. Damage assessment, and environmental impact are unknown at the time of this report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-16",
         "type": "Attack",
@@ -207,7 +212,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 92.29,
-    "ts": 1794860198
+    "price": 91.67,
+    "ts": 1794886918
   }
 }
