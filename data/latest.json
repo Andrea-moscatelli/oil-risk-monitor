@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-11-17T03:53:26.676106+00:00",
+  "updated_at": "2026-11-17T13:25:02.315167+00:00",
   "vlcc": {
-    "latest": 1444.85,
-    "date": "2026-11-13",
-    "change1d": -2.744963416193813,
-    "change48h": -13.40529331383502,
+    "latest": 1464.37,
+    "date": "2026-11-16",
+    "change1d": 1.3510052946672735,
+    "change48h": -1.431042722616005,
     "history": [
-      {
-        "date": "2026-10-05",
-        "value": 2685.18
-      },
       {
         "date": "2026-10-06",
         "value": 2806.94
@@ -125,18 +121,22 @@
       {
         "date": "2026-11-13",
         "value": 1444.85
+      },
+      {
+        "date": "2026-11-16",
+        "value": 1464.37
       }
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 7,
     "window": "2026-11-10 → 2026-11-17",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-16",
         "type": "Attack",
-        "title": "Attack UKMTO #208 16 November 2026 UKMTO has received a report of an incident 7NM north of Khasab, Oman. A third-party has reported an attack involving a tanker transiting the Strait of Hormuz, disabling the vessel and resulting in an engine room fire. The crew have been reported safe. Damage assessment, and environmental impact are unknown at the time of this report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+        "title": "Attack UKMTO #208 16 November 2026 UKMTO WARNING 208-226. UKMTO has received a report of an incident 7NM north of Khasab, Oman. A third-party has reported an attack involving a tanker transiting the Strait of Hormuz, disabling the vessel and resulting in an engine room fire. The crew have been reported safe. Damage assessment, and environmental impact are unknown at the time of this report. UPDATE 001-170745Z: UKMTO has received reports from a maritime security agency that the vessel sustained a second strike, which caused a fired onboard. The crew are currently unaccounted for, and damage assessment is unknown at present. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       },
       {
         "date": "2026-11-16",
@@ -152,6 +152,11 @@
         "date": "2026-11-15",
         "type": "Attack",
         "title": "Attack UKMTO #205 15 November 2026 UKMTO is aware of a report by Indian Shipping Authorities of an attack on a Tanker while transiting through the Arabian Gulf eastbound prior to entering the Strait of Hormuz. The crew are accounted for and safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
+      },
+      {
+        "date": "2026-11-13",
+        "type": "Attack",
+        "title": "Attack UKMTO #209 13 November 2026 UKMTO has received a time-late verified report of an incident in the Arabian Gulf. A Tanker was struck by unknown projectile while transiting through the Arabian Gulf, eastbound prior to entering the Strait of Hormuz. All crew are safe and accounted for. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       },
       {
         "date": "2026-11-11",
@@ -212,7 +217,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 91.67,
-    "ts": 1794886918
+    "price": 93.25,
+    "ts": 1794921305
   }
 }
