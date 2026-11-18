@@ -1,15 +1,11 @@
 {
-  "updated_at": "2026-11-18T04:24:29.508905+00:00",
+  "updated_at": "2026-11-18T13:57:40.751404+00:00",
   "vlcc": {
-    "latest": 1464.37,
-    "date": "2026-11-16",
-    "change1d": 1.3510052946672735,
-    "change48h": -1.431042722616005,
+    "latest": 1477.55,
+    "date": "2026-11-17",
+    "change1d": 0.9000457534639406,
+    "change48h": 2.2632107139149316,
     "history": [
-      {
-        "date": "2026-10-06",
-        "value": 2806.94
-      },
       {
         "date": "2026-10-07",
         "value": 3030.84
@@ -125,14 +121,23 @@
       {
         "date": "2026-11-16",
         "value": 1464.37
+      },
+      {
+        "date": "2026-11-17",
+        "value": 1477.55
       }
     ]
   },
   "attacks": {
-    "count": 5,
+    "count": 6,
     "window": "2026-11-11 → 2026-11-18",
-    "change7dText": "5 attacchi verificati UKMTO",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-18",
+        "type": "Attack",
+        "title": "Attack UKMTO #211 18 November 2026 UKMTO WARNING 211-26 - UKMTO has received a time-late report of an incident 13NM north of Khasab, Oman. Local authorities report a tanker was struck by an unknown projectile within the Strait of Hormuz. A fire occurred onboard, which has since been extinguished. Search and rescue efforts are underway for a missing crew member, currently unaccounted for. Vessel damage assessment and environmental impact are unknown at the time of this report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO. Attempted Boarding UKMTO #210 17 November 2026 UKMTO WARNING 210-26: UKMTO has received a report of an incident 50NM southwest of Al Mukalla, Yemen. Local authorities reported a Cargo vessel being approached by small skiff with weapons and ladders onboard. The unauthorised personnel attempted to board the Cargo vessel but the Ar"
+      },
       {
         "date": "2026-11-16",
         "type": "Attack",
@@ -202,12 +207,12 @@
     ]
   },
   "score": {
-    "value": 2,
-    "label": "Pressione bassa",
+    "value": 3,
+    "label": "Segnale misto/attenzione",
     "signal": "SELL"
   },
   "brent": {
-    "price": 92.69,
-    "ts": 1794975193
+    "price": 89.85,
+    "ts": 1795009639
   }
 }
