@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T22:23:05.216256+00:00",
+  "updated_at": "2026-11-18T04:24:29.508905+00:00",
   "vlcc": {
     "latest": 1464.37,
     "date": "2026-11-16",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 7,
-    "window": "2026-11-10 → 2026-11-17",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "count": 5,
+    "window": "2026-11-11 → 2026-11-18",
+    "change7dText": "5 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-16",
@@ -167,16 +167,6 @@
         "date": "2026-11-11",
         "type": "Suspicious Activity",
         "title": "Suspicious Activity UKMTO #202 11 November 2026 UKMTO WARNING 202-26. UPDATE 001 UKMTO has received a report of an incident involving a tanker in the Strait of Hormuz. The status of crew, damage assessment, and environmental impact are unknown at the time of this report. UPDATE 001: UKMTO have now gained confirmation that the tanker was struck with an unknown projectile whilst transiting the Strait of Hormuz. All crew are reported safe and well. Due to this confirmation, this has been re-classified as an Attack. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-10",
-        "type": "Attack",
-        "title": "Attack UKMTO #201 10 November 2026 UKMTO INCIDENT 201-26 UKMTO has received a report of an incident 19NM northeast of Lima, Oman. The Master of a Tanker reports being struck by an unknown projectile. The crew are safe and there is no environmental impact reported. Master will conduct damage assessment at first light. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-10",
-        "type": "Attack",
-        "title": "Attack UKMTO #203 10 November 2026 UKMTO WARNING 203-26 - ATTACK Incident Date: 10 Nov 2026 Incident Time: TBC UKMTO has received a time-late report of an incident in the Arabian Gulf. A tanker has been struck by an unknown projectile whilst travelling eastbound. Multiple casualties were sustained and have been taken ashore for medical assistance. All remaining crew are safe and accounted for. No damage assessment or environmental impact are available at this time. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -217,7 +207,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 93.07,
-    "ts": 1794952770
+    "price": 92.69,
+    "ts": 1794975193
   }
 }
