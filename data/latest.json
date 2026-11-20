@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T11:48:11.007740+00:00",
+  "updated_at": "2026-11-20T20:17:39.053549+00:00",
   "vlcc": {
     "latest": 1491.97,
     "date": "2026-11-19",
@@ -129,10 +129,20 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 7,
     "window": "2026-11-13 → 2026-11-20",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-20",
+        "type": "Attack",
+        "title": "Attack UKMTO #214 20 November 2026 UKMTO WARNING 214-26 - ATTACK Incident Date: 20 Nov 2026 Incident Time: 1500UTC UKMTO has received a report of an incident 8NM north of Khasab, Oman. A Tanker on an outbound transit of the Strait of Hormuz has been struck on the port bow by an unknown projectile. The CSO has reported a fire onboard the vessel. No casualties have been reported at this time. No environmental impact reported. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
+      {
+        "date": "2026-11-20",
+        "type": "Suspicious Activity",
+        "title": "Suspicious Activity UKMTO #213 20 November 2026 UKMTO WARNING 213-26 - SUSPICIOUS ACTIVITY Incident Date: 20 Nov 2026 Incident Time: 1102UTC UKMTO has received a report of an incident 95NM southwest of Al Mukalla, Yemen. A Bulk Carrier travelling eastbound in the IRTC was approached on the port side by a dark blue skiff with 6 unidentified, armed persons on board. Four shots were fired in quick succession from the skiff and warning shots were returned by the armed security team onboard the Bulk Carrier. The skiff has moved away and the Bulk Carrier is continuing its voyage. The Master has reported no damage to the vessel and no injuries to any crew members. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-18",
         "type": "Attack",
@@ -207,7 +217,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 89.3,
-    "ts": 1795174659
+    "price": 89.57,
+    "ts": 1795205201
   }
 }
