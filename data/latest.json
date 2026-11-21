@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:12:54.325210+00:00",
+  "updated_at": "2026-11-21T09:53:15.539443+00:00",
   "vlcc": {
     "latest": 1491.97,
     "date": "2026-11-19",
@@ -129,10 +129,20 @@
     ]
   },
   "attacks": {
-    "count": 6,
+    "count": 8,
     "window": "2026-11-14 → 2026-11-21",
-    "change7dText": "6 attacchi verificati UKMTO",
+    "change7dText": "8 attacchi verificati UKMTO",
     "events": [
+      {
+        "date": "2026-11-21",
+        "type": "Attack",
+        "title": "Attack UKMTO #216 21 November 2026 UKMTO WARNING 216-26 - ATTACK Incident Date: 21 Nov 2026 Incident Time: 0550UTC UKMTO has received a report of an incident 17NM east of Khasab, Oman. A Tanker transiting outbound in the Strait of Hormuz has been hit in the engine room by an unknown projectile. There are no reported casualties at this time. Environmental impact is currently unconfirmed. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
+      {
+        "date": "2026-11-21",
+        "type": "Attack",
+        "title": "Attack UKMTO #215 21 November 2026 UKMTO WARNING 215-26 - ATTACK Incident Date 21 Nov 2026 Incident Time: 0500UTC UKMTO has received a report of an incident 11NM north of Khasab, Oman. A Tanker transiting outbound in the Strait of Hormuz has been hit on the stern by an unknown projectile. There are no reported casualties at this time. Environmental impact is currently unconfirmed. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
+      },
       {
         "date": "2026-11-20",
         "type": "Attack",
@@ -207,12 +217,12 @@
     ]
   },
   "score": {
-    "value": 3,
+    "value": 4,
     "label": "Segnale misto/attenzione",
-    "signal": "SELL"
+    "signal": "NEUTRAL"
   },
   "brent": {
-    "price": 89.87,
+    "price": 89.95,
     "ts": 1795211958
   }
 }
