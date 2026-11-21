@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T20:17:39.053549+00:00",
+  "updated_at": "2026-11-21T02:12:54.325210+00:00",
   "vlcc": {
     "latest": 1491.97,
     "date": "2026-11-19",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 7,
-    "window": "2026-11-13 → 2026-11-20",
-    "change7dText": "7 attacchi verificati UKMTO",
+    "count": 6,
+    "window": "2026-11-14 → 2026-11-21",
+    "change7dText": "6 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-20",
@@ -172,11 +172,6 @@
         "date": "2026-11-15",
         "type": "Attack",
         "title": "Attack UKMTO #205 15 November 2026 UKMTO is aware of a report by Indian Shipping Authorities of an attack on a Tanker while transiting through the Arabian Gulf eastbound prior to entering the Strait of Hormuz. The crew are accounted for and safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
-      },
-      {
-        "date": "2026-11-13",
-        "type": "Attack",
-        "title": "Attack UKMTO #209 13 November 2026 UKMTO has received a time-late verified report of an incident in the Arabian Gulf. A Tanker was struck by unknown projectile while transiting through the Arabian Gulf, eastbound prior to entering the Strait of Hormuz. All crew are safe and accounted for. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
       }
     ]
   },
@@ -217,7 +212,7 @@
     "signal": "SELL"
   },
   "brent": {
-    "price": 89.57,
-    "ts": 1795205201
+    "price": 89.87,
+    "ts": 1795211958
   }
 }
