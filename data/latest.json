@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T23:15:04.318170+00:00",
+  "updated_at": "2026-11-22T03:15:38.279016+00:00",
   "vlcc": {
     "latest": 1519.72,
     "date": "2026-11-20",
@@ -130,7 +130,7 @@
   },
   "attacks": {
     "count": 8,
-    "window": "2026-11-14 → 2026-11-21",
+    "window": "2026-11-15 → 2026-11-22",
     "change7dText": "8 attacchi verificati UKMTO",
     "events": [
       {
