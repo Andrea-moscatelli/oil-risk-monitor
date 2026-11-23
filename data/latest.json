@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T20:21:15.179650+00:00",
+  "updated_at": "2026-11-23T01:42:24.038271+00:00",
   "vlcc": {
     "latest": 1519.72,
     "date": "2026-11-20",
@@ -129,9 +129,9 @@
     ]
   },
   "attacks": {
-    "count": 8,
-    "window": "2026-11-15 → 2026-11-22",
-    "change7dText": "8 attacchi verificati UKMTO",
+    "count": 7,
+    "window": "2026-11-16 → 2026-11-23",
+    "change7dText": "7 attacchi verificati UKMTO",
     "events": [
       {
         "date": "2026-11-21",
@@ -177,11 +177,6 @@
         "date": "2026-11-16",
         "type": "Suspicious Activity",
         "title": "Suspicious Activity UKMTO #206 16 November 2026 UKMTO WARNING 206-26 - SUSPICIOUS ACTIVITY Incident Date: 16 Nov 26 Incident Time: 0330UTC UKMTO has received a report of an incident 430NM east of Socotra, Yemen. The Master of a tanker has reported being approached by a possible mothership and skiff in position 1202N 06147E. Four armed persons were sighted onboard the skiff, with a ladder also visible. Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst authorities investigate."
-      },
-      {
-        "date": "2026-11-15",
-        "type": "Attack",
-        "title": "Attack UKMTO #205 15 November 2026 UKMTO is aware of a report by Indian Shipping Authorities of an attack on a Tanker while transiting through the Arabian Gulf eastbound prior to entering the Strait of Hormuz. The crew are accounted for and safe. Damage assessment and environmental impact are unknown at time of report. Vessels are advised to transit with caution and report any suspicious activity to UKMTO."
       }
     ]
   },
@@ -217,12 +212,12 @@
     ]
   },
   "score": {
-    "value": 4,
+    "value": 3,
     "label": "Segnale misto/attenzione",
-    "signal": "NEUTRAL"
+    "signal": "SELL"
   },
   "brent": {
-    "price": 89.95,
-    "ts": 1795211958
+    "price": 89.73,
+    "ts": 1795397536
   }
 }
