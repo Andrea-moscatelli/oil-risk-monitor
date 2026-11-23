@@ -1930,5 +1930,17 @@
   "status": "pending",
   "reason": null,
   "outcome": null
+ },
+ {
+  "timestamp": "2026-11-23T10:45:17.543307+00:00",
+  "score": 3,
+  "score_version": 1,
+  "signal": "SELL",
+  "target_ts": "2026-11-24T10:45:17.543307+00:00",
+  "brent_entry": 89.27,
+  "brent_entry_ts": "2026-11-23T10:34:58+00:00",
+  "status": "pending",
+  "reason": null,
+  "outcome": null
  }
 ]

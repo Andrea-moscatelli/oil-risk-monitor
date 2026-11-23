@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-23T01:42:24.038271+00:00",
+  "updated_at": "2026-11-23T10:45:17.543307+00:00",
   "horizon_h": 24,
   "thresholds": {
     "buy_above": 6,
     "sell_below": 4
   },
   "counts": {
-    "total": 134,
+    "total": 135,
     "evaluated": 108,
-    "pending": 1,
+    "pending": 2,
     "skipped": 25
   },
   "baseline": {
@@ -34,7 +34,7 @@
       "avg_signed_ret_pct": 0.8529411764705882,
       "baseline_rate": 0.4722222222222222,
       "p_value": 0.23713504596245943,
-      "pending": 1
+      "pending": 2
     }
   },
   "by_score": [
